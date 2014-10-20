@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		262E06CD18A3D2400074D4EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262E06CC18A3D2400074D4EC /* Foundation.framework */; };
+		262E06D018A3D2400074D4EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 262E06CF18A3D2400074D4EC /* main.m */; };
+		262E06D418A3D2400074D4EC /* FasterStringConcatenation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 262E06D318A3D2400074D4EC /* FasterStringConcatenation.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		262E06C718A3D2400074D4EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				262E06D418A3D2400074D4EC /* FasterStringConcatenation.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		262E06C918A3D2400074D4EC /* 04. FasterStringConcatenation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04. FasterStringConcatenation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		262E06CC18A3D2400074D4EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		262E06CF18A3D2400074D4EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		262E06D218A3D2400074D4EC /* 04. FasterStringConcatenation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "04. FasterStringConcatenation-Prefix.pch"; sourceTree = "<group>"; };
+		262E06D318A3D2400074D4EC /* FasterStringConcatenation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FasterStringConcatenation.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		262E06C618A3D2400074D4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262E06CD18A3D2400074D4EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		262E06C018A3D2400074D4EC = {
+			isa = PBXGroup;
+			children = (
+				262E06CE18A3D2400074D4EC /* FasterStringConcatenation */,
+				262E06CB18A3D2400074D4EC /* Frameworks */,
+				262E06CA18A3D2400074D4EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		262E06CA18A3D2400074D4EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				262E06C918A3D2400074D4EC /* 04. FasterStringConcatenation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		262E06CB18A3D2400074D4EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				262E06CC18A3D2400074D4EC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		262E06CE18A3D2400074D4EC /* FasterStringConcatenation */ = {
+			isa = PBXGroup;
+			children = (
+				262E06CF18A3D2400074D4EC /* main.m */,
+				262E06D318A3D2400074D4EC /* FasterStringConcatenation.1 */,
+				262E06D118A3D2400074D4EC /* Supporting Files */,
+			);
+			path = FasterStringConcatenation;
+			sourceTree = "<group>";
+		};
+		262E06D118A3D2400074D4EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				262E06D218A3D2400074D4EC /* 04. FasterStringConcatenation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		262E06C818A3D2400074D4EC /* 04. FasterStringConcatenation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 262E06D718A3D2400074D4EC /* Build configuration list for PBXNativeTarget "04. FasterStringConcatenation" */;
+			buildPhases = (
+				262E06C518A3D2400074D4EC /* Sources */,
+				262E06C618A3D2400074D4EC /* Frameworks */,
+				262E06C718A3D2400074D4EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04. FasterStringConcatenation";
+			productName = FasterStringConcatenation;
+			productReference = 262E06C918A3D2400074D4EC /* 04. FasterStringConcatenation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		262E06C118A3D2400074D4EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = minkovit;
+			};
+			buildConfigurationList = 262E06C418A3D2400074D4EC /* Build configuration list for PBXProject "04. FasterStringConcatenation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 262E06C018A3D2400074D4EC;
+			productRefGroup = 262E06CA18A3D2400074D4EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				262E06C818A3D2400074D4EC /* 04. FasterStringConcatenation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		262E06C518A3D2400074D4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262E06D018A3D2400074D4EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		262E06D518A3D2400074D4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		262E06D618A3D2400074D4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		262E06D818A3D2400074D4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FasterStringConcatenation/04. FasterStringConcatenation-Prefix.pch";
+				PRODUCT_NAME = "04. FasterStringConcatenation";
+			};
+			name = Debug;
+		};
+		262E06D918A3D2400074D4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FasterStringConcatenation/04. FasterStringConcatenation-Prefix.pch";
+				PRODUCT_NAME = "04. FasterStringConcatenation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		262E06C418A3D2400074D4EC /* Build configuration list for PBXProject "04. FasterStringConcatenation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262E06D518A3D2400074D4EC /* Debug */,
+				262E06D618A3D2400074D4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		262E06D718A3D2400074D4EC /* Build configuration list for PBXNativeTarget "04. FasterStringConcatenation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262E06D818A3D2400074D4EC /* Debug */,
+				262E06D918A3D2400074D4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 262E06C118A3D2400074D4EC /* Project object */;
+}
