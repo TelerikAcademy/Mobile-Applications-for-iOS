@@ -1,4 +1,5 @@
 Mobile-Applications-with-iOS
 ============================
 
-Repository for the ASP.NET Web Forms course
+Repository for the Mobile Applications with iOS course
+
