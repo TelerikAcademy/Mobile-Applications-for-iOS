@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZg-SU-wVW">
+                                <rect key="frame" x="230" y="20" width="89" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="i9L-rB-iMS"/>
+                                    <constraint firstAttribute="height" constant="23" id="ppD-xd-jXu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yny-mS-RwV">
+                                <rect key="frame" x="16" y="98" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rdQ-qa-NbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-Lt-Az9">
+                                <rect key="frame" x="16" y="51" width="568" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-4q-jmh">
+                                <rect key="frame" x="16" y="140" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ROL-uw-zma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yny-mS-RwV" firstAttribute="leading" secondItem="Uia-Lt-Az9" secondAttribute="leading" id="3ki-XO-HdY"/>
+                            <constraint firstItem="ZZg-SU-wVW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8qa-fM-EUd"/>
+                            <constraint firstItem="BiC-4q-jmh" firstAttribute="top" secondItem="yny-mS-RwV" secondAttribute="bottom" constant="21" id="EIH-yc-OaZ"/>
+                            <constraint firstItem="Uia-Lt-Az9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fpd-LW-IvN"/>
+                            <constraint firstItem="yny-mS-RwV" firstAttribute="trailing" secondItem="BiC-4q-jmh" secondAttribute="trailing" id="K2p-gs-iK2"/>
+                            <constraint firstItem="yny-mS-RwV" firstAttribute="top" secondItem="Uia-Lt-Az9" secondAttribute="bottom" constant="24" id="Wk6-8n-vZr"/>
+                            <constraint firstItem="Uia-Lt-Az9" firstAttribute="trailing" secondItem="yny-mS-RwV" secondAttribute="trailing" id="bV6-8w-q6c"/>
+                            <constraint firstItem="ZZg-SU-wVW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="230" id="ccx-ML-abe"/>
+                            <constraint firstItem="Uia-Lt-Az9" firstAttribute="top" secondItem="ZZg-SU-wVW" secondAttribute="bottom" constant="8" symbolic="YES" id="dRi-Ri-drx"/>
+                            <constraint firstItem="yny-mS-RwV" firstAttribute="leading" secondItem="BiC-4q-jmh" secondAttribute="leading" id="oMw-RA-UD5"/>
+                            <constraint firstItem="yny-mS-RwV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rk9-3b-5CY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BiC-4q-jmh" secondAttribute="bottom" constant="439" id="xaQ-rc-Rsr"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Upv-fl-eKc" appends="YES" id="fZU-CQ-aUD"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="labelLatitude" destination="Uia-Lt-Az9" id="n0G-t5-k21"/>
+                        <outlet property="labelLongitude" destination="BiC-4q-jmh" id="VUV-Bk-x2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Upv-fl-eKc">
+                    <connections>
+                        <action selector="swipe:" destination="BYZ-38-t0r" id="2dE-wA-t4l"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
