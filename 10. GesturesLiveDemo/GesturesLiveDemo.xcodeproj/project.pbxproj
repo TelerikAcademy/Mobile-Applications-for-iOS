@@ -96,8 +96,7 @@
 				268200681A07BEF8004C2BAA /* Views */,
 				26AE3F731A07B2DA00C0B4A7 /* AppDelegate.h */,
 				26AE3F741A07B2DA00C0B4A7 /* AppDelegate.m */,
-				26AE3F761A07B2DA00C0B4A7 /* ViewController.h */,
-				26AE3F771A07B2DA00C0B4A7 /* ViewController.m */,
+				26C47B3A1A080167000C8ACC /* ViewControllers */,
 				26AE3F791A07B2DA00C0B4A7 /* Main.storyboard */,
 				26AE3F7C1A07B2DA00C0B4A7 /* Images.xcassets */,
 				26AE3F7E1A07B2DA00C0B4A7 /* LaunchScreen.xib */,
@@ -130,6 +129,15 @@
 				26AE3F8A1A07B2DA00C0B4A7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26C47B3A1A080167000C8ACC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26AE3F761A07B2DA00C0B4A7 /* ViewController.h */,
+				26AE3F771A07B2DA00C0B4A7 /* ViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
