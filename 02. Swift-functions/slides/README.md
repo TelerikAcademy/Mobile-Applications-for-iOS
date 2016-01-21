@@ -1,5 +1,5 @@
 <!-- section start -->
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { class:'slide-title', hasScriptWrapper:true, showInPresentation:true } -->
 # Swift functions
 ## Make swiftly iOS development
 
@@ -17,7 +17,7 @@
   - Functions as first-class objects, closures, etc…
 
 <!-- section start -->
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { class:'slide-section', hasScriptWrapper:true, showInPresentation:true } -->
 # Defining Functions in Swift
 - Functions in Swift have the following syntax:
   - Function returning void:
