@@ -123,5 +123,5 @@ UIView.animateWithDuration( 1.0
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', hasScriptWrapper:true, showInPresentation:true } -->
-<!-- # iOS Apps with Swift -->
+<!-- # Swift OOP -->
 ## Questions
