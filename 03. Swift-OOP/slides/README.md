@@ -12,9 +12,27 @@
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Table of Contents
-- Language syntax and specifics
-  - OOP: classes, protocols, enums, extensions
-  - Syntactic sugar: destructuring assignments
+
+- Classes and Structures
+  - Properties
+    - Stored properties
+    - Lazy properties
+    - Computed properties
+    - Property observers
+  - Methods
+    - Instance and Class
+
+<!-- attr: {showInPresentation: true} -->
+<!-- # Table of Contents -->
+
+- Inheritance
+  - Subclassing
+  - Reusing parent's state and behavior
+  - Overriding methods and properties
+  - Preventing sublcassing
+- Protocols
+  - Conforming to protocols
+- Extensions
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', hasScriptWrapper:true, showInPresentation:true } -->
@@ -70,55 +88,6 @@ class Shape: Movable{
 
 <!-- attr: { class:'slide-section demo', hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # Protocols in Swift -->
-## Live Demo
-
-<!-- section start -->
-<!-- attr: { class:'slide-section', hasScriptWrapper:true, showInPresentation:true } -->
-# UIKitAnimations
-## 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-<!-- # UIKitAnimations -->
-- A limited number of animatable propeerties
-- Custom animatable properties cannot be created
-- All animations are disabled by default
-- Animations are enabled only when using special constructs
-
-```
-let view = UIView(frame: CGRectMake(x, y, w, h))
-
-UIView.animateWithDuration( 1.0
-	animations: {
-		let frame = CGRectMake(x + 100,
-								y + 100,
-								w,
-								h)
-		view.frame = frame
-});
-```
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# UIKitAnimations: Animation Blocks
-- UIKitAnimations with Animation Blocks
-
-```
-UIView.animateWithDuration( 1.0
-                     delay: 1.0
-                   options: UIViewAnimationOptions.CurveEaseIn
-                animations: {
-                    let frame = CGRectMake(x + 100,
-                                            y + 100,
-                                            w,
-                                            h)
-                    view.frame= frame
-},
-               completion: {
-                  view.alpha = 0.5
-});
-```
-
-<!-- attr: { class:'slide-section demo', hasScriptWrapper:true, showInPresentation:true } -->
-<!-- # UIKitAnimations -->
 ## Live Demo
 
 <!-- section start -->
