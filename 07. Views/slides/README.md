@@ -47,14 +47,17 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Creating and Loading NIB Files -->
+
 ##  [Demo]()
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
+
 # Creating Custom Views 
 ##  UITableViewCell and UIView
 
 <!-- attr: { showInPresentation:true, style:'' } -->
+
 # Creating Custom Views
 - Views can be created by a NIB file and a class that inherits UIView
   - Or a subclass of UIView
