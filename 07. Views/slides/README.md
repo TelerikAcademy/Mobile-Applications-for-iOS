@@ -1,10 +1,13 @@
 <!-- section start -->
-<!-- attr: { class:'slide-title', showInPresentation:true, style:'' } -->
+<!-- attr: { class:'slide-title' } -->
+
 # Views in iOS
-<div class="signature">
-    <p class="signature-course">Telerik Software Academy</p>
-    <p class="signature-initiative">http://academy.telerik.com </p>
-    <a href = "Mobile apps for iPhone & iPad" class="signature-link">Mobile apps for iPhone & iPad</a>
+## Built-in and custom views
+
+<div class="signature>
+  <p class="signature-course">Telerik Software Academy</p>
+  <p class="signature-initiative">http://academy.telerik.com</p>
+  <a href = "Mobile apps for iPhone & iPad" class="signature-link">Mobile apps for iPhone & iPad</a>
 </div>
 
 <!-- attr: { showInPresentation:true, style:'' } -->
@@ -53,7 +56,7 @@
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
 
-# Creating Custom Views 
+# Creating Custom Views
 ##  UITableViewCell and UIView
 
 <!-- attr: { showInPresentation:true, style:'' } -->
@@ -96,4 +99,3 @@
     - The content is visible only if the tab is selected
   - Only a single tab can be selected at a time
   - The content can contain any number of UIViews
-
