@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/minkov/repos/ios-apps/04. Memory-management/demos/MrcDemos/MrcDemos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ArcDemos/ArcDemos.xcodeproj">
+   </FileRef>
+</Workspace>
