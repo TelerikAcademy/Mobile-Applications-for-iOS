@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ViewDrawings/ViewDrawings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomUITableViewCells/CustomUITableViewCells.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomViews/CustomViews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoadingNibFiles/LoadingNibFiles.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,6 +1,6 @@
 //
-//  LoadingNibFilesTests.m
-//  LoadingNibFilesTests
+//  CustomUITableViewCellsTests.m
+//  CustomUITableViewCellsTests
 //
 //  Created by Doncho Minkov on 10/29/14.
 //  Copyright (c) 2014 Telerik Academy. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface LoadingNibFilesTests : XCTestCase
+@interface CustomUITableViewCellsTests : XCTestCase
 
 @end
 
-@implementation LoadingNibFilesTests
+@implementation CustomUITableViewCellsTests
 
 - (void)setUp {
     [super setUp];
