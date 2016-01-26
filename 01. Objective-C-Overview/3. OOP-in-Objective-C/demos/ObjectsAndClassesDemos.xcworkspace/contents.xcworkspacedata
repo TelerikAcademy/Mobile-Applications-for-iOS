@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:PrimitiveReferenceTypes/1. PrimitiveReferenceTypes.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CreatingClasses/2. CreatingClasses.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Properties/3. Properties.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PropertiesWithGettersSetters/4. PropertiesWithGettersSetters.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InitMethods/5. InitMethods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FactoryMethods/6. FactoryMethods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/minkov/repos/ios-apps/01. Objective-C-Overview/3. OOP-in-Objective-C/demos/Inheritance/7. Inheritance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/minkov/repos/ios-apps/01. Objective-C-Overview/3. OOP-in-Objective-C/demos/Protocols/8. Protocols-and-encapsulation.xcodeproj">
+   </FileRef>
+</Workspace>
