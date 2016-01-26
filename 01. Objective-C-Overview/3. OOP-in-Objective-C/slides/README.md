@@ -1,6 +1,7 @@
 <!-- section start -->
-<!-- attr: { class:'slide-title', showInPresentation:true, style:'' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Objects and Classes
+
 <div class="signature">
     <p class="signature-course">Learning & Development</p>
     <p class="signature-initiative">http://academy.telerik.com</p>
@@ -10,8 +11,8 @@
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Table of Contents
 - Classes and Objects
-  - What are Objects? 
-  - What are Classes? 
+  - What are Objects?
+  - What are Classes?
   - Object Pointers
 - Classes in Objective-C
   - Declaring Class
@@ -35,12 +36,12 @@
 <!-- attr: { showInPresentation:true, style:'' } -->
 # What are Objects?
 - Software objects model real-world objects or abstract concepts
-  - Examples: 
-    - bank, account, customer, dog, bicycle, queue 
+  - Examples:
+    - bank, account, customer, dog, bicycle, queue
 - Real-world objects have `states` and `behaviors`
-  - Account' states: 
+  - Account' states:
     - holder, balance, type
-  - Account' behaviors: 
+  - Account' behaviors:
     - withdraw, deposit, suspend
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -50,26 +51,28 @@
   - Use methods/functions to implement behaviors
 - An object is a software bundle of variables and related methods
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Objects Represent
-- `` checks
-- `` people
-- `` shopping list
-- …
-- `` numbers
-- `` characters
-- `` queues
-- `` arrays
 - Things from the real world
+    - `✓` checks
+    - `✓` people
+    - `✓` shopping list
 - Things from the computer world
+    - `✓` numbers
+    - `✓` characters
+    - `✓` queues
+    - `✓` arrays
+
+
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # What is a Class?
 - The formal definition of `class`:
-- Definition by Google
-- `Classes` act as templates from which an instance of an object is created at run time. Classes define the properties of the object and the methods used to control the object's behavior.
+
+`Classes` act as templates from which an instance of an object is created at run time. Classes define the properties of the object and the methods used to control the object's behavior.
+
+    - Definition by Google
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Classes
@@ -86,29 +89,27 @@
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Classes – Example
 
-```objectivec
+```objective-c
 Account
 ```
 
-```objectivec
+```objective-c
 +owner: Person
 +ammount: double
 ```
 
-```objectivec
+```objective-c
 +suspend
 +deposit: (double) sum
 +withdraw: (double) sum
 ```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Class Name</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Attributes</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">(Properties and Fields)</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Operations</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">(Methods)</div>
+<div class="fragment balloon" style="width:250px; top:15%; left:40%">Class Name</div>
+<div class="fragment balloon" style="width:250px; top:25%; left:40%">Attributes(Properties and Fields)</div>
+<div class="fragment balloon" style="width:250px; top:40%; left:40%">Operations(Methods)</div>
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Objects
-- An `object` is a concrete `instance` of a particular class 
+- An `object` is a concrete `instance` of a particular class
 - Creating an object from a class is called `instantiation`
 - Objects have state
   - Set of values associated to their attributes
@@ -118,6 +119,7 @@ Account
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Objects – Example
+- Class
 
 ```objectivec
 Account
@@ -133,7 +135,10 @@ Account
 +deposit: (double) sum
 +withdraw: (double) sum
 ```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Class</div>
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Objects – Example
+- Object
 
 ```objectivec
 clarkAccount
@@ -144,6 +149,10 @@ clarkAccount
 +Ammount=200.0
 ```
 
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Objects – Example
+- Object
+
 ```objectivec
 bruceAccount
 ```
@@ -153,6 +162,10 @@ bruceAccount
 +Ammount=100000000.0
 ```
 
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Objects – Example
+- Object
+
 ```objectivec
 tonyAccount
 ```
@@ -161,16 +174,13 @@ tonyAccount
 +Owner="Tony Stark"
 +Ammount=100000000.9
 ```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Object</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Object</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Object</div>
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
 # Object Types and  App Memory
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# App Memory 
+# App Memory
 - Every MAC OS X/iOS application has two places to hold the values of the app (variables and stuff)
   - The Stack and the Heap
 - The stack is a fixed-sized stack data structure that holds primitive types and object pointers
@@ -201,14 +211,13 @@ tonyAccount
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Classes in Objective-C
-- Using Classes and their Class Members
+## Using Classes and their Class Members
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Classes in Objective-C
 - Classes – basic units that compose programs
-- Implementation is `encapsulated` (hidden) 
+- Implementation is `encapsulated` (hidden)
 - Classes in Objective-C can contain:
   - Fields (member variables)
   - Properties
@@ -217,7 +226,6 @@ tonyAccount
   - Public interface file (the .h file)
   - Implementation file (the .m file)
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Fields
@@ -267,13 +275,13 @@ tonyAccount
   - `Getter`
     - Called when the property is requested
 
-```objectivec
+```objective-c
 double x = shape.x;
 ```
   - `Setter`
     - Called when the property value is changing
 
-```objectivec
+```objective-c
 shape.x = 4.5;
 ```
 
@@ -285,14 +293,12 @@ shape.x = 4.5;
   - Read-write
   - By default they are read-write
 
-```objectivec
+```objective-c
 @interface
 @property (readonly) int size;
 @property int capacity;
 @end
 ```
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Properties -->
@@ -306,7 +312,7 @@ shape.x = 4.5;
     - The `setter` method is called `setPropertyName`
     - The `getter `method is with `the name of the property`
 
-```objectivec
+```objective-c
 @property int capacity;
 -(int) capacity{ … }
 -(void) setCapacity { … }
@@ -327,19 +333,19 @@ shape.x = 4.5;
   - Using `init` methods
   - Using `factory` methods
 
-```objectivec
+```objective-c
 Person xp = [[Person alloc] init];
 ```
 
-```objectivec
+```objective-c
 Person xp = [Person person];
 ```
 
-```objectivec
+```objective-c
 Person xp = [[Person alloc] initWithFirstname: @"Peter"];
 ```
 
-```objectivec
+```objective-c
 Person xp = [Person personWithFirstname: @"Peter"];
 ```
 
@@ -349,19 +355,19 @@ Person xp = [Person personWithFirstname: @"Peter"];
   - Using `init` methods
   - Using `factory` methods
 
-```objectivec
+```objective-c
 Person xp = [[Person alloc] init];
 ```
 
-```objectivec
+```objective-c
 Person xp = [Person person];
 ```
 
-```objectivec
+```objective-c
 Person xp = [[Person alloc] initWithFirstname: @"Peter"];
 ```
 
-```objectivec
+```objective-c
 Person xp = [Person personWithFirstname: @"Peter"];
 ```
 - Both are equally used and in best case both should be present
@@ -380,7 +386,7 @@ Person xp = [Person personWithFirstname: @"Peter"];
 # Init Methods Template
 - Init methods have a special template to follow:
 
-```objectivec
+```objective-c
 -(id) init
 {
   self = [super init];
@@ -506,9 +512,7 @@ Person xp = [Person personWithFirstname: @"Peter"];
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Fundamental Principles of OOP
-- Object-Oriented
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
+## Object-Oriented
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Fundamental Principles of OOP
@@ -526,23 +530,25 @@ Person xp = [Person personWithFirstname: @"Peter"];
 
 <img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 36px' } -->
 # Classes and Protocols
 - Classes define attributes and behavior
   - Fields, properties, methods, etc.
   - Methods contain code for execution
+
+  ```objectivec
+  @interface Shape: NSObject
+  @end
+  ```
+
+  ```objectivec
+  @protocol Figure
+  @end
+  ```
+
 - Protocols define a set of operations
   - Empty methods and properties, left to be implemented later
 
-```objectivec
-@interface Shape: NSObject
-@end
-```
-
-```objectivec
-@protocol Figure
-@end
-```
 
 ```objectivec
 @implementation Shape
@@ -562,18 +568,13 @@ Person xp = [Person personWithFirstname: @"Peter"];
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Types of Inheritance
 - Inheritance terminology
-- `derived class`
-- `base class /`
-- `parent class`
-- `inherits`
-- `class`
-- `protocol`
-- `conforms to`
+- `derived class` inherits `base/parent class`
+- `class` conforms to `protocol`
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Inheritance – Benefits
 - Inheritance has a lot of benefits
-  - Extensibility 
+  - Extensibility
   - Reusability (code reuse)
   - Provides abstraction
   - Eliminates redundant code
@@ -582,7 +583,6 @@ Person xp = [Person personWithFirstname: @"Peter"];
 - Don't use it to build has-a relationship
   - E.g. person has-a name
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Inheritance
@@ -592,81 +592,20 @@ Person xp = [Person personWithFirstname: @"Peter"];
 - The class whose methods are inherited is called base (parent) class
 - The class that gains new functionality is called derived (child) class
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 30px' } -->
 # Inheritance – Example
 
-```objectivec
-Person
-```
+<img class="slide-image" src="imgs/inheritance.png" style="width:80%; top:10%; left:10%" />
 
-```objectivec
-+Name: NSString
-+Address: NSString
-```
 
-```objectivec
-Employee
-```
 
-```objectivec
-+Company: NSString
-+Salary: double
-```
 
-```objectivec
-Student
-```
 
-```objectivec
-+School: NSString
-```
-- Base class
-- Derived class
-- Derived class
-
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true,hasScriptWrapper:true, style:'' } -->
 # Class Hierarchies
 - Inheritance leads to a hierarchies of classes and / or protocols in an application:
 
-```objectivec
-Game
-```
-
-```objectivec
-MultiplePlayersGame
-```
-
-```objectivec
-BoardGame
-```
-
-```objectivec
-Chess
-```
-
-```objectivec
-Backgammon
-```
-
-```objectivec
-SinglePlayerGame
-```
-
-```objectivec
-Minesweeper
-```
-
-```objectivec
-Solitaire
-```
-
-```objectivec
-…
-```
-
-```objectivec
-…
-```
+<img class="slide-image" src="imgs/class-inheritance.png" style="width:80%; top:30%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Inheritance in Objective-C
@@ -692,28 +631,8 @@ Solitaire
 @property int rank;
 @end
 ```
+<div class="fragment balloon" style="width:250px; top:60%; left:40%">Inherits properties firstname and lastname from Person</div>
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# How to Define Inheritance?
-- Specify the name of the base class after the name of the derived (with colon)
-
-```objectivec
-@interface Person: NSObject
-@property (strong, nonatomic) NSStringx firstname;
-@property (strong, nonatomic) NSStringx lastname;
-@end
-```
-
-```objectivec
-@interface Ninja: Person
-@property int rank;
-@end
-```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Inherits properties firstname and lastname from Person</div>
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # How to Define Inheritance?
@@ -731,10 +650,9 @@ Solitaire
 @property int rank;
 @end
 ```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Inherits properties firstname and lastname from Person</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Adds new property</div>
+<div class="fragment balloon" style="width:250px; top:60%; left:40%">Inherits properties firstname and lastname from Person</div>
+<div class="fragment balloon" style="width:250px; top:80%; left:40%">Adds new property</div>
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Simple Inheritance Example
@@ -761,7 +679,7 @@ Solitaire
 @end
 ```
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 38px' } -->
 # Simple Inheritance Example
 
 ```objectivec
@@ -784,12 +702,12 @@ Solitaire
 -(void) walk{
 }
 -(void) fight{
-  
+
 }
 @end
 ```
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 38px' } -->
 # Simple Inheritance Example
 
 ```objectivec
@@ -812,49 +730,18 @@ Solitaire
 -(void) walk{
 }
 -(void) fight{
-  
+
 }
 @end
 ```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Adds new property – rank</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Adds new method – fight</div>
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Simple Inheritance Example
-
-```objectivec
-@interface Ninja: Person
-@property int rank;
--(instancetype) initWithRank: (int) rank;
--(void) fight;
-@end
-```
-
-```objectivec
-@implementation Ninja
-@synthesize rank;
--(instancetype) initWithRank: (int) rank{
-  self = [super initWithFirstname: @"[Unknown]"
-                      andLastname: @"[Unknown]"];
-  self.rank = rank;
-  return self;
-}
--(void) walk{
-}
--(void) fight{
-  
-}
-@end
-```
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Adds new property – rank</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Adds new method – fight</div>
-<div class="fragment balloon" style="width:250px; top:60%; left:10%">Overwrites the method from the parent</div>
+<div class="fragment balloon" style="width:250px; top:15%; left:65%">Adds new property – rank</div>
+<div class="fragment balloon" style="width:250px; top:30%; left:65%">Adds new method – fight</div>
+<div class="fragment balloon" style="width:250px; top:65%; left:30%">Overwrites the method from the parent</div>
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Simple Inheritance  -->
 ##  [Demo]()
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Inheritance: Important Aspects
@@ -871,27 +758,25 @@ Solitaire
   - It can freely add new members
   - Cannot remove derived ones
 - Declaring new members with the same name or signature overwrites the inherited ones
-- A class may not provide implementation to some methods 
+- A class may not provide implementation to some methods
   - Derived classes can provide the implementation
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Abstraction
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Abstraction
 - Abstraction means ignoring irrelevant features, properties, or functions and emphasizing the relevant ones ...
 - ... relevant to the given project
-  - With an eye to future reuse in similar projects
-- Abstraction helps managing complexity
 
-```objectivec
+```
 "Relevant" to what?
 ```
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
+  - With an eye to future reuse in similar projects
+- Abstraction helps managing complexity
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Abstraction (2)
@@ -908,35 +793,7 @@ Solitaire
   - Protocols
   - Inheritance
 
-```objectivec
-+Color : long
-```
-
-```objectivec
-ButtonBase
-```
-
-```objectivec
-+click()
-```
-
-```objectivec
-Control
-```
-
-```objectivec
-Button
-```
-
-```objectivec
-RadioButton
-```
-
-```objectivec
-CheckBox
-```
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
+<img class="slide-image" src="imgs/abstraction.png" style="width:50%; top:35%; left:30%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Protocols
@@ -1003,9 +860,9 @@ CheckBox
 
 ```objectivec
 @implementation Rectangle
-@synthesize x; @synthesize y; 
+@synthesize x; @synthesize y;
 @synthesize width; @synthesize height;
--(void) moveToX:(double) x 
+-(void) moveToX:(double) x
            andY: (double) y { /x implementation x/ }
 -(double) calculateSurface { /x implementation x/ }
 -(double) calculateArea { /x implementation x/ }
@@ -1020,13 +877,10 @@ CheckBox
 <!-- # Protocols andImplementations -->
 ##  [Demo]()
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Encapsulation
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Encapsulation
@@ -1077,11 +931,8 @@ Person
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Encapsulation
-  - Live Demo
+## Live Demo
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
-
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Object-Oriented Programmingwith Objective-C
-- http://academy.telerik.com 
-
+  <!-- attr: { class:'slide-section', showInPresentation: true } -->
+  <!-- # Questions
+  ##  OOP in Objective-C -->

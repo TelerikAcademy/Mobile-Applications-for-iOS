@@ -8,7 +8,6 @@
     <a href = "Mobile apps for iPhone & iPad" class="signature-link">Mobile apps for iPhone & iPad</a>
 </div>
 
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
@@ -17,8 +16,6 @@
   - Return type
   - Using Parameters
 - Instance and Class methods
-
-<img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
@@ -29,7 +26,7 @@
 # Methods Overview
 - A method is `a named piece of code`
   - And can be executed only by using the method name (identifier)
-  - A method has executing context 
+  - A method has executing context
     - Either object or class
 - Methods are pretty much the same as functions
   - But methods belong to a class or an object
@@ -39,9 +36,16 @@
 # Using Methods
 - Methods are invoked by sending a message to an object or class
   - Send message "introduce" to object "person"
-- [person introduce];
-- [numbersArray addObject: number];
+
+```objective-c
+ [person introduce];
+ ```
+
   - Send a message "addObject" to object "numbersArray" with parameter "12.3"
+
+```objective-c
+- [numbersArray addObject: number];
+```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Using Methods -->
@@ -61,61 +65,73 @@
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Declaring Methods:Class or Instance
-- -/+ (return_type) methodName: parameters
-- {
--   //method body
-- }
 - Method declaration has the structure
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Declaring Methods:Class or Instance
-  - + means the method is a class method
-    - The message is send to the object itself
-  - – means the method is an instance method
-    - The message is sent to an instantiated object
-- -/+ (return_type) methodName: parameters
-- {
--   //method body
-- }
-- Method declaration has the structure
+```objective-c
+-/+ (return_type) methodName: parameters
+{
+  //method body
+}
+```
+
+- + means the method is a class method
+  - The message is send to the object itself
+- – means the method is an instance method
+  - The message is sent to an instantiated object
+
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-- -/+ (return_type) methodName: parameters
-- {
--   //method body
-- }
 # Declaring Methods:Return Type
+- Method declaration has the structure
+
+```objective-c
+-/+ (return_type) methodName: parameters
+{
+  //method body
+}
+```
+
   - The return type can be of any Objective-C type
     - int, double, NSString, char
     - NSArray, NSDictionary
     - Even function (Function pointer)
-- Method declaration has the structure
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Declaring Methods:Identifier
+- Method declaration has the structure
+
+```objective-c
+-/+ (return_type) methodName: parameters
+{
+  //method body
+}
+```
+
   - The identifier must be any valid Obj-C name
     - Any Latin letter
     - Digits, cannot start with a digit
-    - Underscore _ 
-- -/+ (return_type) methodName: parameters
-- {
--   //method body
-- }
-- Method declaration has the structure
+    - Underscore _
+
+
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Declaring Methods:Parameters
+
+- Method declaration has the structure
+
+```objective-c
+-/+ (return_type) methodName: parameters
+{
+  //method body
+}
+```
+
   - The parameters of a method can be 0 or more
     - Each parameter has a type
   - The parameters are part of the method name
   - Each parameter has two names
     - One that is part of the method identifier
     - One to be used inside the method
-- -/+ (return_type) methodName: parameters
-- {
--   //method body
-- }
-- Method declaration has the structure
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Declaring Methods -->
@@ -132,10 +148,12 @@
     - One is part of the method identifier and signature
     - The other is the variable identifier, used inside the method body
 - Given the method:
+```objective-c
+-(id) initWithFirstname: (NSString x) fname               
+          andLastname: (NSString x) lname
+{ … }
+```
   - Its signature is `–(id) initWithFirstname:andLastname`
-- -(id) initWithFirstname: (NSString x) fname               
--              andLastname: (NSString x) lname
-- { … }
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Method Parameters -->
@@ -158,10 +176,13 @@
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Defining Class and Instance Methods
 - Both types of methods have the same form
-- +/- (return_type) methodName: parameters
-- {
--   //method body
-- }
+
+```objective-c
++/- (return_type) methodName: parameters
+{
+  //method body
+}
+```
   - The way to specify if the methods is class or instance is:
     - – (minus) means instance method
     - + (plus) means class method
@@ -169,6 +190,10 @@
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Instance and Class Methods -->
 ##  [Demo]()
+
+<!-- attr: { class:'slide-section', showInPresentation: true } -->
+<!-- # Questions
+##  Methods in Objective-C -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Homework
@@ -185,4 +210,3 @@
   - The user should be able to add TODO with a end date
   - The user should be able to list all TODOs
 - xUse the above class to create an iOS application with UI
-

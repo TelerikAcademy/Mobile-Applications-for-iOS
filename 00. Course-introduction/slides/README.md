@@ -22,9 +22,9 @@
 
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', id:'coming-next' } -->
-# Mobile Applications for iPhone and iPad
-## The Next Course in the Mobile Track of the Telerik Software Academy
+<!-- attr: { class:'slide-section', id:'coming-next', showInPresentation: true } -->
+<!-- # Mobile Applications for iPhone and iPad
+## The Next Course in the Mobile Track of the Telerik Software Academy -->
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # What's Coming Next?
@@ -42,11 +42,11 @@
 [Curriculum](http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0)
 
 <!-- section start -->
-<!-- attr: {class: 'slide-section', id: 'spa-program'} -->
-# Mobile Applications for iPhone and iPad Course Program
-## Topis that will be covered?
+<!-- attr: {class: 'slide-section', id: 'spa-program', showInPresentation: true} -->
+<!-- # Mobile Applications for iPhone and iPad Course Program
+## Topis that will be covered? -->
 
-<!-- attr: { hasScriptWrapper:true, style:'font-size:0.5em' } -->
+<!-- attr: { hasScriptWrapper:true, style:'font-size:32px' } -->
 # The Course Program
 
 - **First week:**
@@ -57,7 +57,7 @@
   - Working with data
     - LocalData (SQLite, CoreData)
     - Remote data (HTTP, Parse.com)
-  - Lifecycle  
+  - Lifecycle
 - **Third week**:
   - Graphics and animations
   - Touch and gestures
@@ -66,9 +66,9 @@
 - Full topics schedule can be found [here](https://github.com/TelerikAcademy/Mobile-Applications-for-iOS/blob/master/README.md)
 
 <!-- section start -->
-<!-- attr: {class: 'slide-section', id: 'trainers'} -->
-# The Trainers Team
-##  Or the trainer-team?
+<!-- attr: {class: 'slide-section', id: 'trainers', showInPresentation: true} -->
+<!-- # The Trainers Team
+##  Or the trainer-team? -->
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
@@ -80,14 +80,14 @@
 	-   Experience with Web and Mobile apps
 	-   Proficient with JavaScript and .NET
 	-   Email: doncho.minkov [at] telerik.com
-	-   Blog: <a href="http://minkov.it" title="http://minkov.it" target="_blank">http://minkov.it</a>
-	-   GitHub: <a href="https://github.com/Minkov" title="https://github.com/Minkov" target="_blank">https://github.com/Minkov</a>
+	-   Blog: <a href="http://minkov.it" title="http://minkov.it" target="\_blank">http://minkov.it</a>
+	-   GitHub: <a href="https://github.com/Minkov" title="https://github.com/Minkov" target="\_blank">https://github.com/Minkov</a>
 
 <!-- section start -->
-<!-- attr: {id: 'evaluation', class: 'slide-section'} -->
-# Course Evaluation
+<!-- attr: {id: 'evaluation', class: 'slide-section', showInPresentation: true } -->
+<!-- # Course Evaluation -->
 
-<!-- attr: { style:'font-size:0.9em' } -->
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Course Evaluation
 - Course Evaluation
   - **Course project** – 85%
@@ -95,6 +95,7 @@
     - **Homework evaluation** – 5%
   - **Forums activity** – up to 5%
 
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Pass / Excellence / Fail Criteria
 -	Criteria for pass / pass with excellence / fail
 	-	Pass with excellence
@@ -108,10 +109,11 @@
 -  Online students have to deliver all homework in order to be invited to defend their course project
 
 <!-- section start -->
-<!-- attr: { id:'resources', class:'slide-section' } -->
-# Resources
-## Addition Course Materials?
+<!-- attr: { id:'resources', class:'slide-section', showInPresentation: true } -->
+<!-- # Resources
+## Addition Course Materials? -->
 
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Course Web Site & Forums
 -	Register for the [Telerik Academy Forums](http://telerikacademy.com/Forum)
 	-	Discuss the course exercises with your colleagues
@@ -125,6 +127,7 @@
 	-	Reports about your results
 -	[Course site](http://telerikacademy.com/Courses/Courses/Details/311)
 
+<!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # Required Software
 -	Software needed for this course:
   - Operating System
@@ -132,7 +135,7 @@
   - **xCode** or AppCode
 
 <!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section' } -->
+<!-- attr: { id:'questions', class:'slide-section',showInPresentation: true } -->
 # Questions
 ## Mobile Applications for iPhone and iPad
 [link to the forum](http://telerikacademy.com/Forum/Category/62/ios-mobile-apps)
