@@ -24,25 +24,25 @@
     
     self.title = [NSString stringWithFormat:@"%@ %@", self.phone.vendor, self.phone.model];
     
-    self.venderLabel.text = self.phone.vendor;
+    self.venderLabel.text = [NSString stringWithFormat: @"by %@", self.phone.vendor];
     self.modelLabel.text = self.phone.model;
-    self.priceLabel.text = [NSString stringWithFormat:@"Price: %.2f", self.phone.price];
+    
+    NSString *formattedPrice = [self formatPrice: [NSNumber numberWithFloat: self.phone.price]];
+    
+    self.priceLabel.text = [NSString stringWithFormat:@"Price: %@", formattedPrice];
     self.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.phone.imageUrl]]];
+}
+
+-(NSString* ) formatPrice: (NSNumber*) price {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    NSString *formattedPrice = [numberFormatter stringFromNumber: [NSNumber numberWithFloat:self.phone.price]];
+    return formattedPrice;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

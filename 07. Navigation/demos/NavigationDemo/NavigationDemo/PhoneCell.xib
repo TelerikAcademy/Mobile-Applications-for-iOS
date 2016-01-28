@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="119" height="116"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9Y-e4-jwo">
-                        <rect key="frame" x="127" y="8" width="193" height="64"/>
+                        <rect key="frame" x="127" y="8" width="193" height="36"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vendor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoH-56-xH2">
-                        <rect key="frame" x="127" y="80" width="185" height="28"/>
+                        <rect key="frame" x="127" y="44" width="185" height="28"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -37,7 +37,7 @@
                 <outlet property="modelLabel" destination="m9Y-e4-jwo" id="ptk-mg-g5B"/>
                 <outlet property="vendorLabel" destination="eoH-56-xH2" id="N2d-sg-A5o"/>
             </connections>
-            <point key="canvasLocation" x="458" y="218"/>
+            <point key="canvasLocation" x="311" y="49"/>
         </tableViewCell>
     </objects>
 </document>

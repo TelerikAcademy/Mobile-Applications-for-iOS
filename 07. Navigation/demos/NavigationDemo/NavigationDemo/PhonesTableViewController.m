@@ -34,7 +34,6 @@
      action:@selector(showAdd)];
     
     self.navigationItem.rightBarButtonItem = addBarButton;
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -109,27 +108,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 120;
+}
 @end
