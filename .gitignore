@@ -29,3 +29,8 @@ DerivedData
 #	Node.js
 
 node_modules
+
+#    MAC Specicif 
+
+.DS_Store
+
