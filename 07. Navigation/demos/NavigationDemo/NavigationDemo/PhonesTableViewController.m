@@ -15,6 +15,8 @@
 
 #import "DMPhone.h"
 
+#import "PhoneCell.h"
+
 @interface PhonesTableViewController()<UINavigationControllerDelegate>
 
 @end
@@ -32,6 +34,7 @@
      action:@selector(showAdd)];
     
     self.navigationItem.rightBarButtonItem = addBarButton;
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -50,19 +53,21 @@
     [self.navigationController pushViewController:addPhoneVC animated:YES];
 }
 
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath   {
     static NSString *cellIdentifier = @"phoneCell";
+
+    UITableViewCell *originalCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if(cell == nil) {
-        cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    if(![originalCell isKindOfClass: [PhoneCell class]] ||originalCell == nil) {
+        originalCell = [[[NSBundle mainBundle] loadNibNamed:@"PhoneCell" owner:nil options:nil] objectAtIndex:0];
     }
+    
+    PhoneCell *cell =(PhoneCell*) originalCell;
     
     DMPhone *phone = [self.phones objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = phone.vendor;
+    cell.modelLabel.text = phone.model;
+    cell.vendorLabel.text = phone.vendor;
     
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: phone.imageUrl]]];
     
@@ -70,8 +75,9 @@
         img = [UIImage imageNamed:@"Batman"];
     }
     
-    cell.imageView.image = img;
-    cell.imageView.backgroundColor = [UIColor grayColor];
+    cell.bounds = CGRectMake(0,0, 300, 300);
+    cell.cellImageView.image = img;
+    cell.cellImageView.backgroundColor = [UIColor grayColor];
     
     return cell;
 }
@@ -79,7 +85,6 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section  {
     return self.phones.count;
 }
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
     
@@ -96,16 +101,13 @@
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(editingStyle == UITableViewCellEditingStyleDelete) {
-        AppDelegate *delegate = [UIApplication sharedApplication].delegate;
-        [delegate.data deletePhone: [self.phones objectAtIndex:indexPath.row]];
+    if( editingStyle == UITableViewCellEditingStyleDelete){
+        AppDelegate* delegate = [UIApplication sharedApplication].delegate;
+        [delegate.data deletePhone:[self.phones objectAtIndex:indexPath.row]];
         self.phones = [delegate.data phones];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
-
-
-
 
 
 

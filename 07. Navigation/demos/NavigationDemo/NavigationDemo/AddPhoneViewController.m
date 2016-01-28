@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *priceField;
 @property (weak, nonatomic) IBOutlet UITextField *imageField;
 - (IBAction)tapSave:(id)sender;
+- (IBAction)imageFieldChanged:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *imagePreview;
 
 @end
 
@@ -42,6 +44,17 @@
     [delegate.data addPhone:phone];
     
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)imageFieldChanged:(id)sender {
+    NSURL *url = [NSURL URLWithString:self.imageField.text];
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+    if(image == nil){
+        return;
+    }
+    
+    self.imagePreview.image = image;
 }
 
 @end

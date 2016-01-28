@@ -58,6 +58,9 @@
                                 <rect key="frame" x="211" y="189" width="284" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="imageFieldChanged:" destination="FYm-a8-R31" eventType="editingDidEnd" id="cPo-1W-29D"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9h-kP-l3W">
                                 <rect key="frame" x="65" y="185" width="138" height="37"/>
@@ -72,6 +75,9 @@
                                     <action selector="tapSave:" destination="FYm-a8-R31" eventType="touchUpInside" id="28z-XK-tRn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2L-RG-3hy">
+                                <rect key="frame" x="20" y="321" width="560" height="259"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -110,6 +116,7 @@
                     </view>
                     <connections>
                         <outlet property="imageField" destination="4Aw-uE-Rwk" id="NZr-Y9-Afx"/>
+                        <outlet property="imagePreview" destination="K2L-RG-3hy" id="DUN-m4-8dk"/>
                         <outlet property="modelField" destination="aCO-Af-igO" id="ag8-3M-Jsp"/>
                         <outlet property="priceField" destination="VC6-4W-YHi" id="ONi-si-2tx"/>
                         <outlet property="vendorField" destination="GdT-mD-zYD" id="kbD-aW-OIE"/>

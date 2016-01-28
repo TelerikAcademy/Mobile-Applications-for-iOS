@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F64D5BF81C5A51400023533F /* PhoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64D5BF71C5A51400023533F /* PhoneCell.xib */; };
+		F64D5BFB1C5A525A0023533F /* PhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F64D5BFA1C5A525A0023533F /* PhoneCell.m */; };
 		F6A28AF11C5A14EA004A1528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28AF01C5A14EA004A1528 /* main.m */; };
 		F6A28AF41C5A14EA004A1528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A28AF31C5A14EA004A1528 /* AppDelegate.m */; };
 		F6A28AFA1C5A14EA004A1528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A28AF81C5A14EA004A1528 /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F64D5BF71C5A51400023533F /* PhoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneCell.xib; sourceTree = "<group>"; };
+		F64D5BF91C5A525A0023533F /* PhoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCell.h; sourceTree = "<group>"; };
+		F64D5BFA1C5A525A0023533F /* PhoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCell.m; sourceTree = "<group>"; };
 		F6A28AEC1C5A14EA004A1528 /* NavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A28AF01C5A14EA004A1528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6A28AF21C5A14EA004A1528 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F64D5BF61C5A512A0023533F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F64D5BF71C5A51400023533F /* PhoneCell.xib */,
+				F64D5BF91C5A525A0023533F /* PhoneCell.h */,
+				F64D5BFA1C5A525A0023533F /* PhoneCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F6A28AE31C5A14EA004A1528 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +85,7 @@
 		F6A28AEE1C5A14EA004A1528 /* NavigationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F64D5BF61C5A512A0023533F /* Views */,
 				F6A28B141C5A3002004A1528 /* Data */,
 				F6A28B0A1C5A1BB2004A1528 /* Models */,
 				F6A28B061C5A16AB004A1528 /* ViewControllers */,
@@ -181,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A28AFF1C5A14EA004A1528 /* LaunchScreen.storyboard in Resources */,
+				F64D5BF81C5A51400023533F /* PhoneCell.xib in Resources */,
 				F6A28AFC1C5A14EA004A1528 /* Assets.xcassets in Resources */,
 				F6A28AFA1C5A14EA004A1528 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64D5BFB1C5A525A0023533F /* PhoneCell.m in Sources */,
 				F6A28B171C5A3019004A1528 /* LocalData.m in Sources */,
 				F6A28AF41C5A14EA004A1528 /* AppDelegate.m in Sources */,
 				F6A28B131C5A2E72004A1528 /* AddPhoneViewController.m in Sources */,
@@ -311,10 +329,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NavigationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DM.NavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavigationDemo/NavigationDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -322,10 +343,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NavigationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DM.NavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NavigationDemo/NavigationDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -348,6 +371,7 @@
 				F6A28B051C5A14EA004A1528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

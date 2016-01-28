@@ -39,6 +39,4 @@
     [self._phones removeObjectAtIndex:index];
 }
 
-
-
 @end
