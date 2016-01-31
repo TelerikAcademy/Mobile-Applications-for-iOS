@@ -1,25 +1,25 @@
 # Mobile Applications for iOS
 
-Each student develops an mobile application for iOS (iPhone and/or iPad). The application must follow the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business Application](LOB_APP_REQUIREMENTS.md).
+Each student develops an mobile application for iOS (iPhone and/or iPad). The application should comply with the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business application](LOB_APP_REQUIREMENTS.md).
 
 ##  General Requirements
 
 - The application must be **fully working** application
-  - Just an idea and/or not-fully-finished application is not good enough and will not get full points for features
+  - Just a project concept or an incomplete application is not sufficient and will not get full points for features
 - The application must be hosted in http://github.com
-  - With at least 10 commits during a range of days
-  - The following will result in reduction of the points:
+  - With at least 10 commits during a range of at least 5 days
+  - The following will result in points reduction:
     - Less than 10 commits
-    - 90% of application written in a range of 48 hours
+    - 90% of application written within 48 hours
 - **Each student must have absolute comprehension of their own project**
   - Anything **less than full and complete understanding** of the project will be **considered suspicious and will lead to unwanted by both parties results**   
 
 ##  Project Defense Requirements
 
-Each student that wants to defend their project in-front of a trainer and take the course will meet the following requirements:
+Each student whp wants to defend their project in front of a trainer and pass the course has to meet the following requirements:
 
-- Registered for the course at http://telerikacademy.com/Courses/Courses/Details/311
-- Send a project documentation no later than 23:59 on February 3
+- Course registration at http://telerikacademy.com/Courses/Courses/Details/311
+- Project documentation submitted no later than 23:59 on February 3
   - Requirements for the project documentation can be found [here](#requirements-documentation)
 
 ##  Examination procedure
@@ -29,22 +29,22 @@ Students have **20 minutes** to present their application to a trainer. The dead
 The examination for each student will be done as follows:
 
 1. The trainer checks-out the application from the repository of the application on their device
-  - The version that is checked out is the **last before the deadline**
-- The student shows:
-  - The short video, uploaded in http://youtube.com
-  - Their application registered in http://best.telerikacademy.com
-    - With link to their [Github](http://github.com) repository
+  - The **lastest version submitted before the deadline** is checked out
+- The student present:
+  - The short video on http://youtube.com
+  - Their application registered in http://best.telerikacademy.com. All registered applications should include:
+    - Link to student's [Github](http://github.com) repository
     - Images of the application
-    - Link to the recorded video in http://youtube.com
+    - Link to the recorded video on http://youtube.com
   - Any missing component of the above will result in lower project points
 - The student has **20 minutes** to present their application as follows:
-  - 5 minutes for the **idea of the application**
-  - 10 minutes for **explanation of the code** and how it **follows the requirements** of a [Game Application](/GAME_REQUIREMENTS.md) or [Line-of-business application](/LOB_APP_REQUIREMENTS.md)
+  - 5 minutes for the **application concept**
+  - 10 minutes for **explanation of the code** and how it **meets the requirements** of a [Game application](/GAME_REQUIREMENTS.md) or [Line-of-business application](/LOB_APP_REQUIREMENTS.md)
   - 5 minutes for **questions by trainer**
 - The student **must answer all questions** of the trainer, concerning their application
-  - Any not answered question about the code and/or the application can lead to unwanted results by both parties
-  - Any **hint of lack of understanding** of a component of the application results in **lower or none** of the project points
-- The trainer writes down a feedback for the application of the student
+  - Any unanswered questions about the code and/or the application can lead to score penalties
+  - Any **hint of lack of understanding** of a component of the application results in **fewer or none** of the project points
+- The trainer prepares a writtern feedback on each student application
   - This is done without the presence of the student
 
 - Each student will receive **their personal feedback** from the trainer **after the examination of all students is finished**
@@ -54,12 +54,12 @@ The examination for each student will be done as follows:
 
 ##  Requirements-documentation
 
-Each student that wants to take the course and defend their application in-front of a trainer must write a brief documentation of their application.
+Each student who wants to take the course and defend their application must write brief documentation of their application.
 
 The documentation must include:
 
-- 1-3 paragraphs with the idea of the application
-- 5-8 bullets of the functionality
-- Optionally, include images with sample UI of the application
+- 1-3 paragraphs with the application concept
+- 5-8 point of the functionality
+- Images with sample UI of the application (optional)
 
 Write your documentation in **Markdown** and commit it as **README.md** of your repository
