@@ -11,6 +11,8 @@ Each student develops an mobile application for iOS (iPhone and/or iPad). The ap
   - The following will result in reduction of the points:
     - Less than 10 commits
     - 90% of application written in a range of 48 hours
+- **Each student must have absolute comprehension of their own project**
+  - Anything **less than full and complete understanding** of the project will be **considered suspicious and will lead to unwanted by both parties results**   
 
 ##  Project Defense Requirements
 
@@ -46,6 +48,9 @@ The examination for each student will be done as follows:
   - This is done without the presence of the student
 
 - Each student will receive **their personal feedback** from the trainer **after the examination of all students is finished**
+- The defense is public and any observers can attend the defense of other students
+  - It is actually preferable as it **strengthens the objectivity of the evaluation**
+  - The observers must keep quiet and **do not disturb the defense** in any way
 
 ##  Requirements-documentation
 
