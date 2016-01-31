@@ -56,3 +56,5 @@ The documentation must include:
 - 1-3 paragraphs with the idea of the application
 - 5-8 bullets of the functionality
 - Optionally, include images with sample UI of the application
+
+Write your documentation in **Markdown** and commit it as **README.md** of your repository
