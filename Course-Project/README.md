@@ -12,13 +12,13 @@ Each student develops an mobile application for iOS (iPhone and/or iPad). The ap
     - Less than 10 commits
     - 90% of application written in a range of 24 hours
 
-##  Examination
+##  Examination procedure
 
 Students have **20 minutes** to present their application to a trainer. The deadline for the development of the application is 10:00 AM, 8 February 2016. Any commit after that time will be excluded from the defense version of the application.
 
 The examination for each student will be done as follows:
 
-1) The trainer checks-out the application from the repository of the application on their device
+1. The trainer checks-out the application from the repository of the application on their device
   - The version that is checked out is the **last before the deadline**
 - The student shows:
   - The short video, uploaded in http://youtube.com
