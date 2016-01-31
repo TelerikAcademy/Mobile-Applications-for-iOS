@@ -18,7 +18,7 @@ Each student that wants to defend their project in-front of a trainer and take t
 
 - Registered for the course at http://telerikacademy.com/Courses/Courses/Details/311
 - Send a project documentation no later than 23:59 on February 3
-  - Requirements for the project documentation can be found [here](#Requirements-documentation)
+  - Requirements for the project documentation can be found [here](/#requirements-documentation)
 
 ##  Examination procedure
 
