@@ -8,9 +8,17 @@ Each student develops an mobile application for iOS (iPhone and/or iPad). The ap
   - Just an idea and/or not-fully-finished application is not good enough and will not get full points for features
 - The application must be hosted in http://github.com
   - With at least 10 commits during a range of days
-  - The following will not lead to full points for features:
+  - The following will result in reduction of the points:
     - Less than 10 commits
-    - 90% of application written in a range of 24 hours
+    - 90% of application written in a range of 48 hours
+
+##  Project Defense Requirements
+
+Each student that wants to defend their project in-front of a trainer and take the course will meet the following requirements:
+
+- Registered for the course at http://telerikacademy.com/Courses/Courses/Details/311
+- Send a project documentation no later than 23:59 on February 3
+  - Requirements for the project documentation can be found [here](#Requirements-documentation)
 
 ##  Examination procedure
 
@@ -38,3 +46,13 @@ The examination for each student will be done as follows:
   - This is done without the presence of the student
 
 - Each student will receive **their personal feedback** from the trainer **after the examination of all students is finished**
+
+##  Requirements-documentation
+
+Each student that wants to take the course and defend their application in-front of a trainer must write a brief documentation of their application.
+
+The documentation must include:
+
+- 1-3 paragraphs with the idea of the application
+- 5-8 bullets of the functionality
+- Optionally, include images with sample UI of the application
