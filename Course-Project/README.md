@@ -1,6 +1,6 @@
 # Mobile Applications for iOS
 
-Each student develops an mobile application for iOS (iPhone and/or iPad). The application must follow the requirements for either [Game application](LOB_APP_REQUIREMENTS.md) or [Line-of-business Application](GAME_APP_REQUIREMENTS.md).
+Each student develops an mobile application for iOS (iPhone and/or iPad). The application must follow the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business Application](LOB_APP_REQUIREMENTS.md).
 
 ##  General Requirements
 
