@@ -59,7 +59,7 @@ Each student who wants to take the course and defend their application must writ
 The documentation must include:
 
 - 1-3 paragraphs with the application concept
-- 5-8 point of the functionality
+- 3-8 point of the functionality
 - Images with sample UI of the application (optional)
 
-Write your documentation in **Markdown** and commit it as **README.md** of your repository
+Write your documentation in english in **Markdown** and commit it as **README.md** of your repository
