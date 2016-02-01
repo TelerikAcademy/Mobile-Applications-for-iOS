@@ -28,7 +28,7 @@ Students have **20 minutes** to present their application to a trainer. The dead
 
 The examination for each student will be done as follows:
 
-1. The trainer checks out the application from the repository of the application on their device
+1. The trainer checks out the application from the application repository on their device
   - The **lastest version submitted before the deadline** is checked out
 - The student presents:
   - The short video on http://youtube.com
@@ -43,7 +43,7 @@ The examination for each student will be done as follows:
   - 5 minutes for **questions by trainer**
 - The student **must answer all questions** of the trainer, concerning their application
   - Any unanswered questions about the code and/or the application can lead to score penalties
-  - Any **hint of lack of understanding** of a component of the application results in **fewer or none** of the project points
+  - Any **hint of lack of understanding** of a component of the application results in **fewer or no** project points
 - The trainer prepares writtern feedback on each student application
   - This is done without the presence of the student
 
