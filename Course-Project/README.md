@@ -1,13 +1,13 @@
 # Mobile Applications for iOS
 
-Each student develops an mobile application for iOS (iPhone and/or iPad). The application should comply with the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business application](LOB_APP_REQUIREMENTS.md).
+Each student develops a mobile application for iOS (iPhone and/or iPad). The application should comply with the requirements for either [Game application](GAME_APP_REQUIREMENTS.md) or [Line-of-business application](LOB_APP_REQUIREMENTS.md).
 
 ##  General Requirements
 
-- The application must be **fully working** application
+- The application must be **fully working**
   - Just a project concept or an incomplete application is not sufficient and will not get full points for features
 - The application must be hosted in http://github.com
-  - With at least 10 commits during a range of at least 5 days
+  - With at least 10 commits within range of at least 5 days
   - The following will result in points reduction:
     - Less than 10 commits
     - 90% of application written within 48 hours
@@ -16,7 +16,7 @@ Each student develops an mobile application for iOS (iPhone and/or iPad). The ap
 
 ##  Project Defense Requirements
 
-Each student whp wants to defend their project in front of a trainer and pass the course has to meet the following requirements:
+Each student who wants to defend their project in front of a trainer and pass the course has to meet the following requirements:
 
 - Course registration at http://telerikacademy.com/Courses/Courses/Details/311
 - Project documentation submitted no later than 23:59 on February 3
@@ -28,9 +28,9 @@ Students have **20 minutes** to present their application to a trainer. The dead
 
 The examination for each student will be done as follows:
 
-1. The trainer checks-out the application from the repository of the application on their device
+1. The trainer checks out the application from the application repository on their device
   - The **lastest version submitted before the deadline** is checked out
-- The student present:
+- The student presents:
   - The short video on http://youtube.com
   - Their application registered in http://best.telerikacademy.com. All registered applications should include:
     - Link to student's [Github](http://github.com) repository
@@ -43,8 +43,8 @@ The examination for each student will be done as follows:
   - 5 minutes for **questions by trainer**
 - The student **must answer all questions** of the trainer, concerning their application
   - Any unanswered questions about the code and/or the application can lead to score penalties
-  - Any **hint of lack of understanding** of a component of the application results in **fewer or none** of the project points
-- The trainer prepares a writtern feedback on each student application
+  - Any **hint of lack of understanding** of a component of the application results in **fewer or no** project points
+- The trainer prepares writtern feedback on each student application
   - This is done without the presence of the student
 
 - Each student will receive **their personal feedback** from the trainer **after the examination of all students is finished**
@@ -59,7 +59,7 @@ Each student who wants to take the course and defend their application must writ
 The documentation must include:
 
 - 1-3 paragraphs with the application concept
-- 3-8 point of the functionality
+- 3-8 bullet poins of the functionality
 - Images with sample UI of the application (optional)
 
 Write your documentation in english in **Markdown** and commit it as **README.md** of your repository
