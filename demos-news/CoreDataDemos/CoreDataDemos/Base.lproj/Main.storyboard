@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4bL-Y8-vzP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Superheroes Table Table View Controller-->
+        <scene sceneID="x9s-Rs-Cne">
+            <objects>
+                <tableViewController id="I05-UR-mbS" customClass="SuperheroesTableTableViewController" customModule="CoreDataDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sPc-l3-Voo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1hB-1L-YRO">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hB-1L-YRO" id="G1X-eV-I0s">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I05-UR-mbS" id="jI6-UK-LZ2"/>
+                            <outlet property="delegate" destination="I05-UR-mbS" id="6JB-Yg-hsY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="uhC-Ph-hzu"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="348-aP-E9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="290"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Aua-An-Tja">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4bL-Y8-vzP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AiV-mS-BX1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I05-UR-mbS" kind="relationship" relationship="rootViewController" id="LsM-6I-I79"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuD-jE-aj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="290"/>
+        </scene>
+        <!--Add Superhero View Controller-->
+        <scene sceneID="pCz-uQ-0q6">
+            <objects>
+                <viewController storyboardIdentifier="AddSuperheroScene" id="fFA-Xp-lQx" customClass="AddSuperheroViewController" customModule="CoreDataDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3f2-qH-iyV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ABH-gO-aJ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ynQ-OU-GmE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-OK-de0">
+                                <rect key="frame" x="160" y="58" width="326" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tt9-SW-kEp">
+                                <rect key="frame" x="176" y="169" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-3W-cFD">
+                                <rect key="frame" x="160" y="229" width="326" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-1o-VkV">
+                                <rect key="frame" x="14" y="377" width="560" height="32"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveSuperhero:" destination="fFA-Xp-lQx" eventType="touchUpInside" id="4kp-An-31b"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-oN-OFT">
+                                <rect key="frame" x="176" y="339" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eS6-OK-de0" firstAttribute="centerX" secondItem="ynQ-OU-GmE" secondAttribute="centerX" id="1tK-V3-SRE"/>
+                            <constraint firstItem="Tt9-SW-kEp" firstAttribute="centerX" secondItem="ynQ-OU-GmE" secondAttribute="centerX" id="4bK-QU-Ho9"/>
+                            <constraint firstItem="Smb-3W-cFD" firstAttribute="centerX" secondItem="ynQ-OU-GmE" secondAttribute="centerX" id="Gpy-42-C05"/>
+                            <constraint firstItem="MGI-1o-VkV" firstAttribute="centerX" secondItem="ynQ-OU-GmE" secondAttribute="centerX" id="t46-YR-O92"/>
+                            <constraint firstItem="rUv-oN-OFT" firstAttribute="centerX" secondItem="ynQ-OU-GmE" secondAttribute="centerX" id="z3K-Ck-C7X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityField" destination="rUv-oN-OFT" id="uUC-RR-jdw"/>
+                        <outlet property="nameField" destination="Tt9-SW-kEp" id="qpl-1f-TsM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2k-GY-2D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="950"/>
+        </scene>
+    </scenes>
+</document>
