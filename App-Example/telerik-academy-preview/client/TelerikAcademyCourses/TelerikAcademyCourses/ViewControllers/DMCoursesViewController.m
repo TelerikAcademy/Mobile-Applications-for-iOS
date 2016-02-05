@@ -18,7 +18,10 @@
 
 @interface DMCoursesViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 - (IBAction)tapShowMore:(id)sender;
 
 @property (strong, nonatomic) NSMutableArray *courses;
@@ -37,7 +40,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title  = @"Courses!";
+    
+    self.labelTitle.text = @"All Courses";
+    
+    UIImage *bgImage = [UIImage imageNamed: @"TelerikAcademyHeader"];
+    [self.navigationController.navigationBar setBackgroundImage: bgImage forBarMetrics:UIBarMetricsDefault];
+    
     
     [self.tableView registerClass: UITableViewCell.self forCellReuseIdentifier:@"Cell"];
     

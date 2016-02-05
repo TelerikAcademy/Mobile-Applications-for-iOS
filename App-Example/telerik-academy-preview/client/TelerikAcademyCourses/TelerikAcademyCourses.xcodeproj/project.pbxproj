@@ -11,7 +11,7 @@
 		F63C257E1C64ACA70087596C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63C257D1C64ACA70087596C /* CoreData.framework */; };
 		F63C25811C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F63C257F1C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld */; };
 		F63C25851C64AD130087596C /* DMHttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25831C64AD130087596C /* DMHttpData.m */; };
-		F63C25AF1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.m */; };
+		F63C25AF1C64B2FF0087596C /* DMFavoriteCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesViewController.m */; };
 		F644031F1C63C95200D9F1A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F644031E1C63C95200D9F1A8 /* main.m */; };
 		F64403221C63C95200D9F1A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64403211C63C95200D9F1A8 /* AppDelegate.m */; };
 		F64403281C63C95300D9F1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64403261C63C95300D9F1A8 /* Main.storyboard */; };
@@ -31,8 +31,8 @@
 		F63C25821C64AD130087596C /* DMHttpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMHttpData.h; path = HttpData/DMHttpData.h; sourceTree = "<group>"; };
 		F63C25831C64AD130087596C /* DMHttpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMHttpData.m; path = HttpData/DMHttpData.m; sourceTree = "<group>"; };
 		F63C25841C64AD130087596C /* DMHttpDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMHttpDataModel.h; path = HttpData/DMHttpDataModel.h; sourceTree = "<group>"; };
-		F63C25AD1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMFavoriteCoursesTableViewController.h; path = ViewControllers/DMFavoriteCoursesTableViewController.h; sourceTree = "<group>"; };
-		F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMFavoriteCoursesTableViewController.m; path = ViewControllers/DMFavoriteCoursesTableViewController.m; sourceTree = "<group>"; };
+		F63C25AD1C64B2FF0087596C /* DMFavoriteCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMFavoriteCoursesViewController.h; path = ViewControllers/DMFavoriteCoursesViewController.h; sourceTree = "<group>"; };
+		F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMFavoriteCoursesViewController.m; path = ViewControllers/DMFavoriteCoursesViewController.m; sourceTree = "<group>"; };
 		F644031A1C63C95200D9F1A8 /* TelerikAcademyCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelerikAcademyCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F644031E1C63C95200D9F1A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64403201C63C95200D9F1A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 				F644033F1C63CD2B00D9F1A8 /* DMCoursesViewController.m */,
 				F63C25771C64A4B80087596C /* DMCourseDetailsViewController.h */,
 				F63C25781C64A4B80087596C /* DMCourseDetailsViewController.m */,
-				F63C25AD1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.h */,
-				F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.m */,
+				F63C25AD1C64B2FF0087596C /* DMFavoriteCoursesViewController.h */,
+				F63C25AE1C64B2FF0087596C /* DMFavoriteCoursesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64403221C63C95200D9F1A8 /* AppDelegate.m in Sources */,
-				F63C25AF1C64B2FF0087596C /* DMFavoriteCoursesTableViewController.m in Sources */,
+				F63C25AF1C64B2FF0087596C /* DMFavoriteCoursesViewController.m in Sources */,
 				F64403401C63CD2B00D9F1A8 /* DMCoursesViewController.m in Sources */,
 				F6ADEFAA1C64FCE500D88966 /* iToast.m in Sources */,
 				F63C25851C64AD130087596C /* DMHttpData.m in Sources */,

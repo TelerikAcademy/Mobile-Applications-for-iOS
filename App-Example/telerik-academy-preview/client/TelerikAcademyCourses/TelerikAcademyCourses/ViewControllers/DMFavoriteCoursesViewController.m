@@ -6,7 +6,7 @@
 //  Copyright © 2016 Doncho Minkov. All rights reserved.
 //
 
-#import "DMFavoriteCoursesTableViewController.h"
+#import "DMFavoriteCoursesViewController.h"
 #import "AppDelegate.h"
 
 #import <CoreData/CoreData.h>
@@ -15,7 +15,11 @@
 
 #import "DMCourseDetailsViewController.h"
 
-@interface DMFavoriteCoursesTableViewController ()
+@interface DMFavoriteCoursesViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedContext;
 
@@ -23,11 +27,18 @@
 
 @end
 
-@implementation DMFavoriteCoursesTableViewController
+@implementation DMFavoriteCoursesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"My favorite courses";
+    
+    self.labelTitle.text = @"My favorite courses!";
+    
+    UIImage *bgImage = [UIImage imageNamed: @"TelerikAcademyHeader"];
+    [self.navigationController.navigationBar setBackgroundImage: bgImage forBarMetrics:UIBarMetricsDefault];
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
     [self.tableView registerClass:UITableViewCell.self forCellReuseIdentifier: @"FavoriteCourseCell"];
 }

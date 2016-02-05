@@ -25,6 +25,8 @@
 
 @property (strong, nonatomic) NSManagedObjectContext  *managedContext;
 
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelDesc;
 
 - (IBAction)tapAddToFavorites:(id)sender;
@@ -41,7 +43,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = self.courseTitle;
+    
+    self.labelTitle.text = self.courseTitle;
+    
+    UIImage *bgImage = [UIImage imageNamed: @"TelerikAcademyHeader"];
+    [self.navigationController.navigationBar setBackgroundImage: bgImage forBarMetrics:UIBarMetricsDefault];
+    
+    
     
     [self loadCourseDetails];
 }
@@ -61,7 +69,6 @@
         });
     }];
 }
-
 
 -(void) updateButtonsVisibility {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName: @"Course"];
