@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F63C25791C64A4B80087596C /* CourseDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25781C64A4B80087596C /* CourseDetailsViewController.m */; };
+		F63C257C1C64A9450087596C /* DMCourseDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C257B1C64A9450087596C /* DMCourseDetailsModel.m */; };
+		F63C257E1C64ACA70087596C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63C257D1C64ACA70087596C /* CoreData.framework */; };
+		F63C25811C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F63C257F1C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld */; };
+		F63C25851C64AD130087596C /* DMHttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25831C64AD130087596C /* DMHttpData.m */; };
+		F63C25AF1C64B2FF0087596C /* FavoriteCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25AE1C64B2FF0087596C /* FavoriteCoursesTableViewController.m */; };
+		F644031F1C63C95200D9F1A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F644031E1C63C95200D9F1A8 /* main.m */; };
+		F64403221C63C95200D9F1A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64403211C63C95200D9F1A8 /* AppDelegate.m */; };
+		F64403281C63C95300D9F1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64403261C63C95300D9F1A8 /* Main.storyboard */; };
+		F644032A1C63C95300D9F1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64403291C63C95300D9F1A8 /* Assets.xcassets */; };
+		F644032D1C63C95300D9F1A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F644032B1C63C95300D9F1A8 /* LaunchScreen.storyboard */; };
+		F644033C1C63CBB000D9F1A8 /* DMCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F644033B1C63CBB000D9F1A8 /* DMCourseModel.m */; };
+		F64403401C63CD2B00D9F1A8 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F644033F1C63CD2B00D9F1A8 /* CoursesTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F63C25771C64A4B80087596C /* CourseDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDetailsViewController.h; path = ViewControllers/CourseDetailsViewController.h; sourceTree = "<group>"; };
+		F63C25781C64A4B80087596C /* CourseDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDetailsViewController.m; path = ViewControllers/CourseDetailsViewController.m; sourceTree = "<group>"; };
+		F63C257A1C64A9450087596C /* DMCourseDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCourseDetailsModel.h; sourceTree = "<group>"; };
+		F63C257B1C64A9450087596C /* DMCourseDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCourseDetailsModel.m; sourceTree = "<group>"; };
+		F63C257D1C64ACA70087596C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F63C25801C64AD070087596C /* TelerikAcademyCourses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TelerikAcademyCourses.xcdatamodel; sourceTree = "<group>"; };
+		F63C25821C64AD130087596C /* DMHttpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMHttpData.h; path = HttpData/DMHttpData.h; sourceTree = "<group>"; };
+		F63C25831C64AD130087596C /* DMHttpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMHttpData.m; path = HttpData/DMHttpData.m; sourceTree = "<group>"; };
+		F63C25841C64AD130087596C /* DMHttpDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMHttpDataModel.h; path = HttpData/DMHttpDataModel.h; sourceTree = "<group>"; };
+		F63C25AD1C64B2FF0087596C /* FavoriteCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoriteCoursesTableViewController.h; path = ViewControllers/FavoriteCoursesTableViewController.h; sourceTree = "<group>"; };
+		F63C25AE1C64B2FF0087596C /* FavoriteCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoriteCoursesTableViewController.m; path = ViewControllers/FavoriteCoursesTableViewController.m; sourceTree = "<group>"; };
+		F644031A1C63C95200D9F1A8 /* TelerikAcademyCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelerikAcademyCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F644031E1C63C95200D9F1A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F64403201C63C95200D9F1A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F64403211C63C95200D9F1A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F64403271C63C95300D9F1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F64403291C63C95300D9F1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F644032C1C63C95300D9F1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F644032E1C63C95300D9F1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F644033A1C63CBB000D9F1A8 /* DMCourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMCourseModel.h; path = Models/DMCourseModel.h; sourceTree = "<group>"; };
+		F644033B1C63CBB000D9F1A8 /* DMCourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMCourseModel.m; path = Models/DMCourseModel.m; sourceTree = "<group>"; };
+		F644033E1C63CD2B00D9F1A8 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoursesTableViewController.h; path = ViewControllers/CoursesTableViewController.h; sourceTree = "<group>"; };
+		F644033F1C63CD2B00D9F1A8 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoursesTableViewController.m; path = ViewControllers/CoursesTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F64403171C63C95200D9F1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63C257E1C64ACA70087596C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F63C25861C64AD230087596C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F63C257F1C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F64403111C63C95200D9F1A8 = {
+			isa = PBXGroup;
+			children = (
+				F63C257D1C64ACA70087596C /* CoreData.framework */,
+				F644031C1C63C95200D9F1A8 /* TelerikAcademyCourses */,
+				F644031B1C63C95200D9F1A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F644031B1C63C95200D9F1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F644031A1C63C95200D9F1A8 /* TelerikAcademyCourses.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F644031C1C63C95200D9F1A8 /* TelerikAcademyCourses */ = {
+			isa = PBXGroup;
+			children = (
+				F644033D1C63CD0F00D9F1A8 /* ViewControllers */,
+				F64403391C63CB9600D9F1A8 /* Models */,
+				F64403341C63C95A00D9F1A8 /* HttpData */,
+				F64403201C63C95200D9F1A8 /* AppDelegate.h */,
+				F64403211C63C95200D9F1A8 /* AppDelegate.m */,
+				F64403261C63C95300D9F1A8 /* Main.storyboard */,
+				F64403291C63C95300D9F1A8 /* Assets.xcassets */,
+				F644032B1C63C95300D9F1A8 /* LaunchScreen.storyboard */,
+				F644032E1C63C95300D9F1A8 /* Info.plist */,
+				F644031D1C63C95200D9F1A8 /* Supporting Files */,
+				F63C25861C64AD230087596C /* Data */,
+			);
+			path = TelerikAcademyCourses;
+			sourceTree = "<group>";
+		};
+		F644031D1C63C95200D9F1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F644031E1C63C95200D9F1A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F64403341C63C95A00D9F1A8 /* HttpData */ = {
+			isa = PBXGroup;
+			children = (
+				F63C25821C64AD130087596C /* DMHttpData.h */,
+				F63C25831C64AD130087596C /* DMHttpData.m */,
+				F63C25841C64AD130087596C /* DMHttpDataModel.h */,
+			);
+			name = HttpData;
+			sourceTree = "<group>";
+		};
+		F64403391C63CB9600D9F1A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F644033A1C63CBB000D9F1A8 /* DMCourseModel.h */,
+				F644033B1C63CBB000D9F1A8 /* DMCourseModel.m */,
+				F63C257A1C64A9450087596C /* DMCourseDetailsModel.h */,
+				F63C257B1C64A9450087596C /* DMCourseDetailsModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F644033D1C63CD0F00D9F1A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F644033E1C63CD2B00D9F1A8 /* CoursesTableViewController.h */,
+				F644033F1C63CD2B00D9F1A8 /* CoursesTableViewController.m */,
+				F63C25771C64A4B80087596C /* CourseDetailsViewController.h */,
+				F63C25781C64A4B80087596C /* CourseDetailsViewController.m */,
+				F63C25AD1C64B2FF0087596C /* FavoriteCoursesTableViewController.h */,
+				F63C25AE1C64B2FF0087596C /* FavoriteCoursesTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F64403191C63C95200D9F1A8 /* TelerikAcademyCourses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64403311C63C95300D9F1A8 /* Build configuration list for PBXNativeTarget "TelerikAcademyCourses" */;
+			buildPhases = (
+				F64403161C63C95200D9F1A8 /* Sources */,
+				F64403171C63C95200D9F1A8 /* Frameworks */,
+				F64403181C63C95200D9F1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelerikAcademyCourses;
+			productName = TelerikAcademyCourses;
+			productReference = F644031A1C63C95200D9F1A8 /* TelerikAcademyCourses.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F64403121C63C95200D9F1A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Doncho Minkov";
+				TargetAttributes = {
+					F64403191C63C95200D9F1A8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F64403151C63C95200D9F1A8 /* Build configuration list for PBXProject "TelerikAcademyCourses" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F64403111C63C95200D9F1A8;
+			productRefGroup = F644031B1C63C95200D9F1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F64403191C63C95200D9F1A8 /* TelerikAcademyCourses */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F64403181C63C95200D9F1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F644032D1C63C95300D9F1A8 /* LaunchScreen.storyboard in Resources */,
+				F644032A1C63C95300D9F1A8 /* Assets.xcassets in Resources */,
+				F64403281C63C95300D9F1A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F64403161C63C95200D9F1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64403221C63C95200D9F1A8 /* AppDelegate.m in Sources */,
+				F63C25AF1C64B2FF0087596C /* FavoriteCoursesTableViewController.m in Sources */,
+				F64403401C63CD2B00D9F1A8 /* CoursesTableViewController.m in Sources */,
+				F63C25851C64AD130087596C /* DMHttpData.m in Sources */,
+				F644031F1C63C95200D9F1A8 /* main.m in Sources */,
+				F63C25811C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld in Sources */,
+				F644033C1C63CBB000D9F1A8 /* DMCourseModel.m in Sources */,
+				F63C25791C64A4B80087596C /* CourseDetailsViewController.m in Sources */,
+				F63C257C1C64A9450087596C /* DMCourseDetailsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F64403261C63C95300D9F1A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64403271C63C95300D9F1A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F644032B1C63C95300D9F1A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F644032C1C63C95300D9F1A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F644032F1C63C95300D9F1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64403301C63C95300D9F1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F64403321C63C95300D9F1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelerikAcademyCourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DM.TelerikAcademyCourses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F64403331C63C95300D9F1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TelerikAcademyCourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DM.TelerikAcademyCourses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F64403151C63C95200D9F1A8 /* Build configuration list for PBXProject "TelerikAcademyCourses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F644032F1C63C95300D9F1A8 /* Debug */,
+				F64403301C63C95300D9F1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64403311C63C95300D9F1A8 /* Build configuration list for PBXNativeTarget "TelerikAcademyCourses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64403321C63C95300D9F1A8 /* Debug */,
+				F64403331C63C95300D9F1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F63C257F1C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F63C25801C64AD070087596C /* TelerikAcademyCourses.xcdatamodel */,
+			);
+			currentVersion = F63C25801C64AD070087596C /* TelerikAcademyCourses.xcdatamodel */;
+			name = TelerikAcademyCourses.xcdatamodeld;
+			path = Data/TelerikAcademyCourses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F64403121C63C95200D9F1A8 /* Project object */;
+}
