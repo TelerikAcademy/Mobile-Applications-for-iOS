@@ -44,6 +44,11 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+@synthesize baseUrl = _baseUrl;
+
+-(NSString *)baseUrl {
+    return @"http://localhost:9002/api";
+}
 
 #pragma mark - Core Data stack
 

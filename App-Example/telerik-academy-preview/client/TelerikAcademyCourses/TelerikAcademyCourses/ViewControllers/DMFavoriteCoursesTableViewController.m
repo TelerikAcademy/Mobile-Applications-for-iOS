@@ -6,16 +6,16 @@
 //  Copyright © 2016 Doncho Minkov. All rights reserved.
 //
 
-#import "FavoriteCoursesTableViewController.h"
+#import "DMFavoriteCoursesTableViewController.h"
 #import "AppDelegate.h"
 
 #import <CoreData/CoreData.h>
 
 #import "DMCourseModel.h"
 
-#import "CourseDetailsViewController.h"
+#import "DMCourseDetailsViewController.h"
 
-@interface FavoriteCoursesTableViewController ()
+@interface DMFavoriteCoursesTableViewController ()
 
 @property (strong, nonatomic) NSManagedObjectContext *managedContext;
 
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation FavoriteCoursesTableViewController
+@implementation DMFavoriteCoursesTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -78,7 +78,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath  {
     
-    CourseDetailsViewController *courseDetailsVC = [self.storyboard instantiateViewControllerWithIdentifier: @"CourseDetailsScene"];
+    DMCourseDetailsViewController *courseDetailsVC = [self.storyboard instantiateViewControllerWithIdentifier: @"CourseDetailsScene"];
     
     courseDetailsVC.courseId = [self.courses[indexPath.row] courseId];
     courseDetailsVC.courseTitle = [self.courses[indexPath.row] title];

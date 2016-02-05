@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoursesTableViewController : UITableViewController
+@interface DMCoursesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end

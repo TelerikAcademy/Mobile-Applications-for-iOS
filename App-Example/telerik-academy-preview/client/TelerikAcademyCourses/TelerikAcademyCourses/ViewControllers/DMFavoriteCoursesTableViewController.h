@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoriteCoursesTableViewController : UITableViewController
+@interface DMFavoriteCoursesTableViewController : UITableViewController
 
 @end

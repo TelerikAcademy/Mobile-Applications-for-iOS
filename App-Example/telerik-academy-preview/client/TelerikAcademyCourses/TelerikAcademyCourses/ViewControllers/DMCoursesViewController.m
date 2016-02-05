@@ -6,7 +6,7 @@
 //  Copyright © 2016 Doncho Minkov. All rights reserved.
 //
 
-#import "CoursesTableViewController.h"
+#import "DMCoursesViewController.h"
 
 #import "AppDelegate.h"
 
@@ -14,16 +14,26 @@
 
 #import "DMCourseModel.h"
 
-#import "CourseDetailsViewController.h"
+#import "DMCourseDetailsViewController.h"
 
-@interface CoursesTableViewController ()
+@interface DMCoursesViewController ()
 
-@property (strong, nonatomic) NSArray *courses;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)tapShowMore:(id)sender;
+
+@property (strong, nonatomic) NSMutableArray *courses;
+
+@property (strong, nonatomic) NSString *url;
+
 @property (strong, nonatomic) DMHttpData *data;
 
 @end
 
-@implementation CoursesTableViewController
+@implementation DMCoursesViewController
+{
+    UIActivityIndicatorView *_activityIndicator;
+    NSInteger _currentPage;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,16 +41,24 @@
     
     [self.tableView registerClass: UITableViewCell.self forCellReuseIdentifier:@"Cell"];
     
-    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
-    activityIndicator.color = [UIColor blueColor];
-    [activityIndicator startAnimating];
+    _activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:self.view.bounds];
     
-    [self.view addSubview:activityIndicator];
+    _activityIndicator.color = [UIColor blueColor];
+    [_activityIndicator startAnimating];
     
-    NSString *url = @"http://localhost:9002/api/courses";
+    [self.view addSubview: _activityIndicator];
     
-    [self.data getFrom:url headers:nil withCompletionHandler: ^(NSDictionary * result, NSError * err) {
+    self.courses = [NSMutableArray array];
+    _currentPage = 1;
+    [self loadNextPageOfCourses];
+}
+
+-(void) loadNextPageOfCourses {
+    NSString *url = [NSString stringWithFormat: @"%@?page=%ld", self.url, _currentPage];
+    [self.data getFrom: url headers:nil withCompletionHandler: ^(NSDictionary * result, NSError * err) {
         NSArray *coursesDicts = [result objectForKey:@"result"];
         
         NSMutableArray *courses = [NSMutableArray array];
@@ -48,18 +66,13 @@
             [courses addObject:[[DMCourseModel alloc] initWithDict: obj]];
         }];
         
-        self.courses = courses;
+        [self.courses addObjectsFromArray:courses];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
-            [activityIndicator stopAnimating];
+            [_activityIndicator stopAnimating];
         });
     }];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -73,7 +86,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     cell.textLabel.text = [self.courses[indexPath.row] title];
@@ -83,7 +96,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath  {
     
-    CourseDetailsViewController *courseDetailsVC = [self.storyboard instantiateViewControllerWithIdentifier: @"CourseDetailsScene"];
+    DMCourseDetailsViewController *courseDetailsVC = [self.storyboard instantiateViewControllerWithIdentifier: @"CourseDetailsScene"];
     
     courseDetailsVC.courseId = [self.courses[indexPath.row] courseId];
     courseDetailsVC.courseTitle = [self.courses[indexPath.row] title];
@@ -97,4 +110,19 @@
     return appDelegate.httpData;
 }
 
+@synthesize url = _url;
+
+-(NSString *) url {
+    if(_url == nil){
+        AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+        
+        _url = [NSString stringWithFormat:@"%@/courses", delegate.baseUrl];
+    }
+    return _url;
+}
+
+- (IBAction)tapShowMore:(id)sender {
+    ++_currentPage;
+    [self loadNextPageOfCourses];
+}
 @end

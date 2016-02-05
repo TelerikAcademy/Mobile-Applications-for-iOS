@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) NSString *baseUrl;
+
 @property (strong, nonatomic) DMHttpData *httpData;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;

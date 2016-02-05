@@ -10,7 +10,7 @@
 
 #import "DMCourseDetailsModel.h"
 
-@interface CourseDetailsViewController : UIViewController
+@interface DMCourseDetailsViewController : UIViewController
 
 @property (strong, nonatomic) NSNumber *courseId;
 @property (strong, nonatomic) NSString *courseTitle;

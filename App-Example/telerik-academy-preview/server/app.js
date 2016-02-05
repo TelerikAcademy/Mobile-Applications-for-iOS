@@ -46,6 +46,12 @@ router.get('/', function(req, res) {
         });
   });
 
+app.get('/check', function(req, res) {
+  res.send({
+    result: true
+  });
+})
+
 app.use('/api/courses', router);
 
 let port = 9002;

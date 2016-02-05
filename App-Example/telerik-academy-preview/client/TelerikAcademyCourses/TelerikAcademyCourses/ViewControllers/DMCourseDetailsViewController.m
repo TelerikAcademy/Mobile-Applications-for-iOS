@@ -6,7 +6,7 @@
 //  Copyright © 2016 Doncho Minkov. All rights reserved.
 //
 
-#import "CourseDetailsViewController.h"
+#import "DMCourseDetailsViewController.h"
 
 #import "AppDelegate.h"
 
@@ -14,7 +14,12 @@
 
 #import <CoreData/CoreData.h>
 
-@interface CourseDetailsViewController ()
+#import "iToast.h"
+
+
+@interface DMCourseDetailsViewController ()
+
+@property (strong, nonatomic) NSString *url;
 
 @property (strong, nonatomic) DMHttpData *httpData;
 
@@ -31,7 +36,7 @@
 
 @end
 
-@implementation CourseDetailsViewController
+@implementation DMCourseDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +44,9 @@
     self.title = self.courseTitle;
     
     [self loadCourseDetails];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
     [self updateButtonsVisibility];
 }
 
@@ -64,12 +72,13 @@
     NSInteger matchesCount = [self.managedContext countForFetchRequest:fetchRequest error:&err];
     if(matchesCount == 0) {
         self.btnRemoveFromFavorites.hidden = YES;
+        self.btnAddToFavorites.hidden = NO;
     }
     else {
         self.btnAddToFavorites.hidden = YES;
+        self.btnRemoveFromFavorites.hidden = NO;
     }
 }
-
 
 @synthesize httpData = _httpData;
 
@@ -79,6 +88,16 @@
         _httpData = appDelegate.httpData;
     }
     return _httpData;
+}
+
+@synthesize url = _url;
+
+-(NSString *)url {
+    if(_url == nil) {
+        AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+        _url = [NSString stringWithFormat:@"%@/courses/", delegate.baseUrl];
+    }
+    return _url;
 }
 
 @synthesize managedContext = _managedContext;
@@ -113,10 +132,12 @@
     }
     self.btnAddToFavorites.hidden = YES;
     self.btnRemoveFromFavorites.hidden = NO;
+    
+    [[[[iToast makeText: [NSString stringWithFormat :@"%@ added to favorites", self.courseTitle]]
+       setGravity:iToastGravityBottom] setDuration:iToastDurationShort] show];
 }
 
 - (IBAction)tapRemoveFromFavorites:(id)sender {
-    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName: @"Course"];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"courseId==%@", self.courseId]];
     
@@ -132,5 +153,8 @@
     
     self.btnRemoveFromFavorites.hidden = YES;
     self.btnAddToFavorites.hidden = NO;
+    
+    [[[[iToast makeText: [NSString stringWithFormat :@"%@ removed from favorites", self.courseTitle]]
+      setGravity:iToastGravityBottom] setDuration:iToastDurationShort] show];
 }
 @end
