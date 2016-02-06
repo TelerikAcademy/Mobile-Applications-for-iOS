@@ -4,9 +4,12 @@ let express = require('express');
 
 let app = express();
 
-let db = require('./db');
+// let db = require('./db');
 
-let data = require('./data')(db);
+require('./models');
+let config = require('./config')['development'];
+
+let data = require('./data')(config.connectionString);
 
 let router = new express.Router();
 
@@ -15,11 +18,12 @@ router.get('/', function(req, res) {
     let size = isNaN(+req.query.size) ? 10 : +req.query.size;
     data.all()
       .then(function(courses) {
-          courses.sort((c1, c2) => c2.date.localeCompare(c1.date));
+          console.log(courses.length);
+          courses.sort((c1, c2) => c2.date - c1.date);
           courses = courses.slice((page - 1) * size, page * size);
           let responseCourses = courses.map(course => {
             return {
-              id: course.id,
+              id: course._id,
               title: course.name
             };
           });

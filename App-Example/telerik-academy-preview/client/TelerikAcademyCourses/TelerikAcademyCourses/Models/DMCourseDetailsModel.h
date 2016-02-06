@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSDate *date;
 @property (strong, nonatomic) NSArray *topics;
 
--(instancetype) initWithId: (NSInteger) courseId
+-(instancetype) initWithId: (NSString *) courseId
                      title: (NSString *) title
                description: (NSString *) description
                       date: (NSDate *) date

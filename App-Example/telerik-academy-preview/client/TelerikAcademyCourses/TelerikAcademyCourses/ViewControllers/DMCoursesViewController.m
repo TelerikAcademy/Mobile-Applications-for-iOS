@@ -66,7 +66,13 @@
 
 -(void) loadNextPageOfCourses {
     NSString *url = [NSString stringWithFormat: @"%@?page=%ld", self.url, _currentPage];
-    [self.data getFrom: url headers:nil withCompletionHandler: ^(NSDictionary * result, NSError * err) {
+    NSDictionary *headers = @{
+                              @"content-type": @"application/json"
+                              };
+    
+    [self.data getFrom: url
+           withHeaders: headers
+ withCompletionHandler: ^(NSDictionary * result, NSError * err) {
         NSArray *coursesDicts = [result objectForKey:@"result"];
         
         NSMutableArray *courses = [NSMutableArray array];

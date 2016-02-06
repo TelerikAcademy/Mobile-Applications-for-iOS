@@ -12,12 +12,14 @@
 
 #import "DMHttpData.h"
 
+#import "DMTopicViewCell.h"
+
 #import <CoreData/CoreData.h>
 
 #import "iToast.h"
 
 
-@interface DMCourseDetailsViewController ()
+@interface DMCourseDetailsViewController ()<UITableViewDataSource>
 
 @property (strong, nonatomic) NSString *url;
 
@@ -29,8 +31,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *labelDesc;
 
-- (IBAction)tapAddToFavorites:(id)sender;
-- (IBAction)tapRemoveFromFavorites:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewResources;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnAddToFavorites;
 
@@ -40,16 +41,19 @@
 
 @implementation DMCourseDetailsViewController
 
+static NSString *topicCellIdentifier = @"TopicCell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     self.labelTitle.text = self.courseTitle;
     
     UIImage *bgImage = [UIImage imageNamed: @"TelerikAcademyHeader"];
     [self.navigationController.navigationBar setBackgroundImage: bgImage forBarMetrics:UIBarMetricsDefault];
     
+    self.tableViewResources.dataSource = self;
     
+    [self.tableViewResources registerClass:DMTopicViewCell.self forCellReuseIdentifier: topicCellIdentifier];
     
     [self loadCourseDetails];
 }
@@ -61,11 +65,11 @@
 -(void) loadCourseDetails {
     NSString *url = [NSString stringWithFormat: @"http://localhost:9002/api/courses/%@", self.courseId];
     
-    [[self data] getFrom:url headers:nil withCompletionHandler:^(NSDictionary * data, NSError * err) {
+    [[self data] getFrom:url withHeaders:nil withCompletionHandler:^(NSDictionary * data, NSError * err) {
         self.courseDetails = [DMCourseDetailsModel courseDetailsWithDict: [data objectForKey:@"result"]];
         dispatch_async(dispatch_get_main_queue(), ^{
-//            self.title = self.courseDetails.title;
             self.labelDesc.text = self.courseDetails.desc;
+            [self.tableViewResources reloadData];
         });
     }];
 }
@@ -164,4 +168,19 @@
     [[[[iToast makeText: [NSString stringWithFormat :@"%@ removed from favorites", self.courseTitle]]
       setGravity:iToastGravityBottom] setDuration:iToastDurationShort] show];
 }
+
+#pragma tableView DataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.courseDetails.topics.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DMTopicViewCell *cell = [tableView dequeueReusableCellWithIdentifier:topicCellIdentifier];
+    
+    cell.textLabel.text = [[self.courseDetails.topics objectAtIndex: indexPath.row] objectForKey:@"title"];
+    
+    return cell;
+}
+
 @end

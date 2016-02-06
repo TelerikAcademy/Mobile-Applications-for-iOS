@@ -20,12 +20,9 @@
       headers:(NSDictionary *)headersDict
 andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
     
-    
     NSURL *url = [NSURL URLWithString:urlStr];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    
-    [request addValue:@"application/json" forHTTPHeaderField:@"content-type"];
     
     [request setHTTPMethod: method];
     
@@ -63,7 +60,7 @@ andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
      resume];
 }
 
--(void)getFrom:(NSString *)urlStr headers:(NSDictionary *)headersDict withCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
+-(void)getFrom:(NSString *)urlStr withHeaders:(NSDictionary *)headersDict withCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
     [self sendAt:urlStr withMethod:@"GET"
             body:nil headers:headersDict andCompletionHandler:completionHandler];
 }
@@ -71,6 +68,16 @@ andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
 -(void)postAt:(NSString *)urlStr withBody:(id<DMHttpDataModel>)body headers:(NSDictionary *)headersDict andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
     [self sendAt:urlStr withMethod:@"POST"
             body:body headers:headersDict andCompletionHandler:completionHandler];
+}
+
+-(void)putAt:(NSString *)urlStr withBody:(id<DMHttpDataModel>)body headers:(NSDictionary *)headersDict andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
+    [self sendAt:urlStr withMethod:@"PUT"
+            body:body headers:headersDict andCompletionHandler:completionHandler];
+}
+
+-(void)deleteFrom:(NSString *)urlStr withHeaders:(NSDictionary *)headersDict andCompletionHandler:(void (^)(NSDictionary *, NSError *))completionHandler {
+    [self sendAt:urlStr withMethod:@"DELETE"
+            body:nil headers:headersDict andCompletionHandler:completionHandler];
 }
 
 @end

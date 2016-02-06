@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F614441A1C6687C2004EBFB9 /* DMTopicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61444191C6687C2004EBFB9 /* DMTopicViewCell.m */; };
 		F63C25791C64A4B80087596C /* DMCourseDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C25781C64A4B80087596C /* DMCourseDetailsViewController.m */; };
 		F63C257E1C64ACA70087596C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63C257D1C64ACA70087596C /* CoreData.framework */; };
 		F63C25811C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F63C257F1C64AD070087596C /* TelerikAcademyCourses.xcdatamodeld */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61444181C6687C2004EBFB9 /* DMTopicViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMTopicViewCell.h; path = Views/DMTopicViewCell.h; sourceTree = "<group>"; };
+		F61444191C6687C2004EBFB9 /* DMTopicViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMTopicViewCell.m; path = Views/DMTopicViewCell.m; sourceTree = "<group>"; };
 		F63C25771C64A4B80087596C /* DMCourseDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMCourseDetailsViewController.h; path = ViewControllers/DMCourseDetailsViewController.h; sourceTree = "<group>"; };
 		F63C25781C64A4B80087596C /* DMCourseDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMCourseDetailsViewController.m; path = ViewControllers/DMCourseDetailsViewController.m; sourceTree = "<group>"; };
 		F63C257D1C64ACA70087596C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61444171C668797004EBFB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F61444181C6687C2004EBFB9 /* DMTopicViewCell.h */,
+				F61444191C6687C2004EBFB9 /* DMTopicViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F63C25861C64AD230087596C /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 		F644031C1C63C95200D9F1A8 /* TelerikAcademyCourses */ = {
 			isa = PBXGroup;
 			children = (
+				F61444171C668797004EBFB9 /* Views */,
 				F6ADEFA71C64FCC400D88966 /* Libs */,
 				F644033D1C63CD0F00D9F1A8 /* ViewControllers */,
 				F64403391C63CB9600D9F1A8 /* Models */,
@@ -231,6 +244,7 @@
 				F64403221C63C95200D9F1A8 /* AppDelegate.m in Sources */,
 				F63C25AF1C64B2FF0087596C /* DMFavoriteCoursesViewController.m in Sources */,
 				F64403401C63CD2B00D9F1A8 /* DMCoursesViewController.m in Sources */,
+				F614441A1C6687C2004EBFB9 /* DMTopicViewCell.m in Sources */,
 				F6ADEFAA1C64FCE500D88966 /* iToast.m in Sources */,
 				F63C25851C64AD130087596C /* DMHttpData.m in Sources */,
 				F644031F1C63C95200D9F1A8 /* main.m in Sources */,

@@ -65,7 +65,7 @@ module.exports = {
         let courseDetails = {};
         let dateString = $('.courseGreyContainer.courseTimespanInfo strong').text();
 
-        courseDetails.id = course.id;
+        // courseDetails.id = course.id;
         courseDetails.name = course.name
         courseDetails.link = url;
         courseDetails.date = moment(dateString);
@@ -73,7 +73,7 @@ module.exports = {
           let desc = '';
           var $desc = $('.descriptionContainer p');
           $desc.each((_, descItem) => {
-            desc += $(descItem).text();
+            desc += $(descItem).text().trim();
           });
           return desc.trim();
         }());
@@ -83,9 +83,20 @@ module.exports = {
           let topics = [];
           $rows.each((index, row) => {
             let $row = $(row);
+            let resources = [];
+            $row.find('.resourceContainer a').each((i, resourceEl) => {
+              let resource = {
+                title: $(resourceEl).text().trim(),
+                link: $(resourceEl).attr('href').trim()
+              };
+              resources.push(resource);
+              // console.log(`------------${resource}`);
+            });
+
             topics.push({
               order: index,
-              title: $row.find('td').eq(0).text().trim()
+              title: $row.find('td').eq(0).text().trim(),
+              resources: resources
             });
           });
           return topics;

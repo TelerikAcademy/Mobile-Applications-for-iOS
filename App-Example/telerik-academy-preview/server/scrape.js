@@ -1,21 +1,27 @@
 'use strict';
-let data = require('./http-data');
+let httpData = require('./http-data');
 
-let db = require('./db');
+require('./models');
+let config = require('./config')['development'];
+let data = require('./data')(config.connectionString);
 
-db('courses').remove({});
-
-data.courses.all()
+httpData.courses.all()
   .then(function(courses) {
     console.log(`Scraping ${courses.length} courses!`);
-    // courses = courses.slice(0, 3);
     courses.forEach(course => {
       console.log(`Scraping ${course.name}`);
-      data.courses.details(course)
+      httpData.courses.details(course)
         .then(function(courseDetails) {
-          db('courses').push(courseDetails);
+          return data.add(courseDetails)
         }, function(err) {
           console.error(err);
+        })
+        .then(function(courseDetails) {
+          let message = `---- "${courseDetails.name}" scraped! ----`;
+          let line = new Array(message.length + 1).join('-');
+          console.log(line);
+          console.log(message);
+          console.log(line);
         });
     });
   }, function(err) {

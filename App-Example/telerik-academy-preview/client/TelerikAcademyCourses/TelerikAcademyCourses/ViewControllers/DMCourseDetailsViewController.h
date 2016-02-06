@@ -12,7 +12,7 @@
 
 @interface DMCourseDetailsViewController : UIViewController
 
-@property (strong, nonatomic) NSNumber *courseId;
+@property (strong, nonatomic) NSString *courseId;
 @property (strong, nonatomic) NSString *courseTitle;
 @property (strong, nonatomic) DMCourseDetailsModel *courseDetails;
 

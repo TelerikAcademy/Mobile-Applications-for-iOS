@@ -15,10 +15,19 @@
 +(DMHttpData*) httpData;
 
 -(void) getFrom: (NSString*) urlStr
-        headers: (NSDictionary *) headersDict
+        withHeaders: (NSDictionary *) headersDict
 withCompletionHandler: (void(^)(NSDictionary*, NSError*)) completionHandler;
 
 -(void) postAt: (NSString*) urlStr
+      withBody: (id<DMHttpDataModel>) bodyDict
+       headers: (NSDictionary *) headersDict
+andCompletionHandler: (void(^)(NSDictionary*, NSError*)) completionHandler;
+
+-(void) deleteFrom: (NSString*) urlStr
+        withHeaders: (NSDictionary *) headersDict
+withCompletionHandler: (void(^)(NSDictionary*, NSError*)) completionHandler;
+
+-(void) putAt: (NSString*) urlStr
       withBody: (id<DMHttpDataModel>) bodyDict
        headers: (NSDictionary *) headersDict
 andCompletionHandler: (void(^)(NSDictionary*, NSError*)) completionHandler;

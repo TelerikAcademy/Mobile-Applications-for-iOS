@@ -11,7 +11,7 @@
 @implementation DMCourseDetailsModel
 
 
--(instancetype)initWithId:(NSInteger)courseId title:(NSString *)title description:(NSString *)description date:(NSDate *)date andTopics:(NSArray *)topics {
+-(instancetype)initWithId:(NSString *) courseId title:(NSString *)title description:(NSString *)description date:(NSDate *)date andTopics:(NSArray *)topics {
     if(self = [super initWithId:courseId andTitle:title]){
         self.desc = description;
         self.date = date;
@@ -22,11 +22,11 @@
 }
 
 -(instancetype)initWithDict:(NSDictionary *)dict {
-    return [self initWithId: [[dict objectForKey: @"id"] intValue]
+    return [self initWithId: [dict objectForKey: @"id"]
                       title: [dict objectForKey: @"title"]
             description:[dict objectForKey:@"description"]
                        date:[NSDate date]
-                  andTopics:nil];
+                  andTopics: [dict objectForKey:@"topics"]];
 }
 
 +(DMCourseDetailsModel *)courseDetailsWithDict:(NSDictionary *)dict {

@@ -59,7 +59,7 @@
     NSMutableArray *courses = [NSMutableArray array];
     for(int i = 0; i < coursesEntities.count; i ++) {
         NSManagedObject *courseEntity = coursesEntities[i];
-        DMCourseModel *course = [DMCourseModel courseWithIdNumber:[courseEntity valueForKey:@"courseId"]
+        DMCourseModel *course = [DMCourseModel courseWithId:[courseEntity valueForKey:@"courseId"]
                                                          andTitle:[courseEntity valueForKey:@"title"]];
         [courses addObject: course];
     }

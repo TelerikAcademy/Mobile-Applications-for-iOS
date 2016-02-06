@@ -1,21 +1,45 @@
 'use strict';
 
-module.exports = function(db) {
+let mongoose = require('mongoose');
+
+module.exports = function(connectionString) {
+  mongoose.connect(connectionString);
+  let Course = mongoose.model('Course');
+
   return {
     all: function() {
       let promise = new Promise(function(resolve, reject) {
-        let courses = db('courses').value();
-        console.log(courses);
-        resolve(courses);
+        Course.find()
+          .exec(function(err, courses) {
+            if (err) {
+              return reject(err);
+            }
+            return resolve(courses);
+          });
       });
       return promise;
     },
     byId: function(id) {
       let promise = new Promise(function(resolve, reject) {
-        let course = db('courses').find({
-          id: id
+        Course.findById(id)
+          .exec(function(err, course) {
+            if (err) {
+              return reject(err);
+            }
+            return resolve(course);
+          });
+      });
+      return promise;
+    },
+    add: function(course) {
+      let promise = new Promise(function(resolve, reject) {
+        let dbCourse = new Course(course);
+        dbCourse.save(function(err) {
+          if (err) {
+            return reject(err);
+          }
+          return resolve(dbCourse);
         });
-        resolve(course);
       });
       return promise;
     }

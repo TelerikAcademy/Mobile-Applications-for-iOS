@@ -11,20 +11,13 @@
 
 @interface DMCourseModel : NSObject<DMHttpDataModel>
 
-@property (strong, nonatomic) NSNumber *courseId;
+@property (strong, nonatomic) NSString *courseId;
 @property (strong, nonatomic) NSString *title;
 
--(instancetype) initWithId: (NSInteger) courseId
+-(instancetype) initWithId: (NSString *) courseId
                  andTitle: (NSString *) title;
 
--(instancetype) initWithIdNumber: (NSNumber *) courseId
-                 andTitle: (NSString *) title;
-
-
-+(DMCourseModel *) courseWithIdNumber: (NSNumber *) courseId
++(DMCourseModel *) courseWithId: (NSString *) courseId
                              andTitle: (NSString *) title;
-
-+(DMCourseModel *) courseWithId: (NSInteger) courseId
-                       andTitle: (NSString *) title;
 
 @end
