@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DMTopicViewCell" rowHeight="67" id="fg0-jb-h6m" customClass="DMTopicViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fg0-jb-h6m" id="MbG-0g-RgD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-Hl-V8D">
+                        <rect key="frame" x="0.0" y="35" width="147" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="147" id="ttl-KW-bke"/>
+                            <constraint firstAttribute="height" constant="24" id="xGR-5v-PSP"/>
+                        </constraints>
+                        <state key="normal" title="Video"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U69-V4-les">
+                        <rect key="frame" x="155" y="35" width="157" height="25"/>
+                        <state key="normal" title="Slides"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neR-9x-k7P">
+                        <rect key="frame" x="0.0" y="8" width="320" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NfD-Hl-V8D" firstAttribute="top" secondItem="neR-9x-k7P" secondAttribute="bottom" id="2lR-px-n6n"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NfD-Hl-V8D" secondAttribute="bottom" constant="-0.5" id="9M5-lg-yAx"/>
+                    <constraint firstItem="NfD-Hl-V8D" firstAttribute="top" secondItem="U69-V4-les" secondAttribute="top" id="BdZ-3I-egZ"/>
+                    <constraint firstAttribute="trailing" secondItem="neR-9x-k7P" secondAttribute="trailing" id="MIb-wl-6t6"/>
+                    <constraint firstItem="U69-V4-les" firstAttribute="trailing" secondItem="MbG-0g-RgD" secondAttribute="trailingMargin" id="SKq-ho-GHu"/>
+                    <constraint firstItem="neR-9x-k7P" firstAttribute="leading" secondItem="NfD-Hl-V8D" secondAttribute="leading" id="gE6-n5-WIg"/>
+                    <constraint firstItem="U69-V4-les" firstAttribute="leading" secondItem="NfD-Hl-V8D" secondAttribute="trailing" constant="8" symbolic="YES" id="lhP-If-F6b"/>
+                    <constraint firstItem="NfD-Hl-V8D" firstAttribute="centerY" secondItem="U69-V4-les" secondAttribute="centerY" id="myq-Ug-hbx"/>
+                    <constraint firstItem="neR-9x-k7P" firstAttribute="top" secondItem="MbG-0g-RgD" secondAttribute="topMargin" id="rgg-6a-8bH"/>
+                    <constraint firstItem="NfD-Hl-V8D" firstAttribute="leading" secondItem="MbG-0g-RgD" secondAttribute="leading" id="yCO-XE-M5M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="neR-9x-k7P" id="BSo-qb-6KT"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="233.5"/>
+        </tableViewCell>
+    </objects>
+</document>

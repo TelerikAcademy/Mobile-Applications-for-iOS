@@ -79,27 +79,30 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZU-SQ-zMW">
                                 <rect key="frame" x="20" y="52" width="560" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="xrP-AQ-Y7U"/>
+                                    <constraint firstAttribute="height" constant="35" id="mWp-X3-1R9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-zW-GIw">
-                                <rect key="frame" x="412" y="106" width="168" height="30"/>
-                                <state key="normal" title="Add to Favorites"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-zW-GIw">
+                                <rect key="frame" x="35" y="106" width="526" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add to Favorites">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="tapAddToFavorites:" destination="IYZ-Kx-yrV" eventType="touchUpInside" id="MJd-vR-u6W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-vC-R15">
-                                <rect key="frame" x="412" y="106" width="168" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIL-vC-R15">
+                                <rect key="frame" x="35" y="106" width="526" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.65332973773617109" blue="0.70352982129176023" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="TrG-I5-flM"/>
-                                    <constraint firstAttribute="width" constant="168" id="jKb-sY-Dha"/>
+                                    <constraint firstAttribute="height" constant="28" id="4dY-DS-o6e"/>
                                 </constraints>
                                 <state key="normal" title="Remove from Favorites">
-                                    <color key="titleColor" red="1" green="0.051940530878300528" blue="0.034050522070323996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tapRemoveFromFavorites:" destination="IYZ-Kx-yrV" eventType="touchUpInside" id="Eqv-Ij-EwU"/>
@@ -108,7 +111,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQW-MD-Zpr">
                                 <rect key="frame" x="20" y="144" width="560" height="97"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="BYp-im-vkp"/>
+                                    <constraint firstAttribute="height" constant="97" id="KFk-PA-UhO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,21 +124,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aQW-MD-Zpr" firstAttribute="trailing" secondItem="OHn-Qb-2Zk" secondAttribute="trailing" id="1u2-7j-3u0"/>
-                            <constraint firstItem="YOU-zW-GIw" firstAttribute="trailing" secondItem="IIL-vC-R15" secondAttribute="trailing" id="5Bd-uS-U7y"/>
-                            <constraint firstItem="IIL-vC-R15" firstAttribute="top" secondItem="TZU-SQ-zMW" secondAttribute="bottom" constant="19" id="7CE-Yl-RNs"/>
-                            <constraint firstItem="TZU-SQ-zMW" firstAttribute="trailing" secondItem="IIL-vC-R15" secondAttribute="trailing" id="7rd-RN-Bcm"/>
-                            <constraint firstItem="YOU-zW-GIw" firstAttribute="trailing" secondItem="aQW-MD-Zpr" secondAttribute="trailing" id="9tO-IY-hBX"/>
-                            <constraint firstItem="YOU-zW-GIw" firstAttribute="leading" secondItem="IIL-vC-R15" secondAttribute="leading" id="H1z-DZ-LbN"/>
-                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="leading" secondItem="aQW-MD-Zpr" secondAttribute="leading" id="Hmo-O8-YgY"/>
-                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="top" secondItem="aQW-MD-Zpr" secondAttribute="bottom" constant="8" symbolic="YES" id="Zhe-iw-dnx"/>
-                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="trailing" secondItem="nbD-XX-gfR" secondAttribute="trailingMargin" id="aOv-gR-425"/>
-                            <constraint firstItem="aQW-MD-Zpr" firstAttribute="top" secondItem="YOU-zW-GIw" secondAttribute="bottom" constant="8" symbolic="YES" id="gcr-qo-bS2"/>
-                            <constraint firstItem="aQW-MD-Zpr" firstAttribute="leading" secondItem="TZU-SQ-zMW" secondAttribute="leading" id="hep-9Z-kNW"/>
-                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="leading" secondItem="nbD-XX-gfR" secondAttribute="leadingMargin" id="kms-Mc-x9H"/>
-                            <constraint firstItem="TZU-SQ-zMW" firstAttribute="top" secondItem="A6j-mE-OeE" secondAttribute="bottom" constant="32" id="mrB-kg-7AG"/>
-                            <constraint firstItem="YOU-zW-GIw" firstAttribute="top" secondItem="IIL-vC-R15" secondAttribute="top" id="ndI-Gv-Ef0"/>
-                            <constraint firstAttribute="bottom" secondItem="OHn-Qb-2Zk" secondAttribute="bottom" constant="20" symbolic="YES" id="w7E-Bd-KrX"/>
+                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="leading" secondItem="aQW-MD-Zpr" secondAttribute="leading" id="3g7-Rm-BEl"/>
+                            <constraint firstItem="IIL-vC-R15" firstAttribute="leading" secondItem="TZU-SQ-zMW" secondAttribute="leading" id="7XH-Ba-mto"/>
+                            <constraint firstItem="TZU-SQ-zMW" firstAttribute="top" secondItem="A6j-mE-OeE" secondAttribute="bottom" constant="32" id="9ZS-x7-zHv"/>
+                            <constraint firstItem="IIL-vC-R15" firstAttribute="trailing" secondItem="TZU-SQ-zMW" secondAttribute="trailing" id="FmF-dc-fDJ"/>
+                            <constraint firstItem="aQW-MD-Zpr" firstAttribute="top" secondItem="YOU-zW-GIw" secondAttribute="bottom" constant="8" symbolic="YES" id="Gg0-Yq-j0r"/>
+                            <constraint firstItem="IIL-vC-R15" firstAttribute="top" secondItem="TZU-SQ-zMW" secondAttribute="bottom" constant="19" id="HWw-4W-fDH"/>
+                            <constraint firstItem="OHn-Qb-2Zk" firstAttribute="top" secondItem="aQW-MD-Zpr" secondAttribute="bottom" constant="8" symbolic="YES" id="Iaa-Ai-fsa"/>
+                            <constraint firstItem="YOU-zW-GIw" firstAttribute="leading" secondItem="nbD-XX-gfR" secondAttribute="leadingMargin" id="K8v-N0-dX1"/>
+                            <constraint firstItem="TZU-SQ-zMW" firstAttribute="trailing" secondItem="nbD-XX-gfR" secondAttribute="trailingMargin" id="U5p-Np-Cvu"/>
+                            <constraint firstAttribute="bottom" secondItem="OHn-Qb-2Zk" secondAttribute="bottom" constant="20" symbolic="YES" id="cyy-ma-Qh5"/>
+                            <constraint firstItem="aQW-MD-Zpr" firstAttribute="trailing" secondItem="OHn-Qb-2Zk" secondAttribute="trailing" id="dfO-sd-gpY"/>
+                            <constraint firstItem="YOU-zW-GIw" firstAttribute="leading" secondItem="aQW-MD-Zpr" secondAttribute="leading" id="e4E-0y-8sy"/>
+                            <constraint firstItem="YOU-zW-GIw" firstAttribute="trailing" secondItem="aQW-MD-Zpr" secondAttribute="trailing" id="e5u-qF-1gm"/>
+                            <constraint firstItem="YOU-zW-GIw" firstAttribute="trailing" secondItem="IIL-vC-R15" secondAttribute="trailing" id="q3H-U7-zLD"/>
+                            <constraint firstItem="YOU-zW-GIw" firstAttribute="leading" secondItem="IIL-vC-R15" secondAttribute="leading" id="q8Q-Sy-3Sx"/>
+                            <constraint firstItem="IIL-vC-R15" firstAttribute="top" secondItem="YOU-zW-GIw" secondAttribute="top" id="rLl-Kg-gCH"/>
                         </constraints>
                     </view>
                     <connections>

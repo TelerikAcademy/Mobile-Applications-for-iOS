@@ -18,14 +18,13 @@
 
 #import "iToast.h"
 
-
-@interface DMCourseDetailsViewController ()<UITableViewDataSource>
+@interface DMCourseDetailsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSString *url;
 
 @property (strong, nonatomic) DMHttpData *httpData;
 
-@property (strong, nonatomic) NSManagedObjectContext  *managedContext;
+@property (strong, nonatomic) NSManagedObjectContext *managedContext;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 
@@ -41,7 +40,7 @@
 
 @implementation DMCourseDetailsViewController
 
-static NSString *topicCellIdentifier = @"TopicCell";
+static NSString *topicCellIdentifier = @"DMTopicViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,8 +51,16 @@ static NSString *topicCellIdentifier = @"TopicCell";
     [self.navigationController.navigationBar setBackgroundImage: bgImage forBarMetrics:UIBarMetricsDefault];
     
     self.tableViewResources.dataSource = self;
+    self.tableViewResources.delegate = self;
     
-    [self.tableViewResources registerClass:DMTopicViewCell.self forCellReuseIdentifier: topicCellIdentifier];
+    //    [self.tableViewResources registerClass:DMTopicViewCell.self forCellReuseIdentifier: topicCellIdentifier];
+    
+//    UINib *nib = [UINib nibWithNibName:topicCellIdentifier
+//                                bundle:nil];
+    
+//    [self.tableViewResources registerNib:nib
+//                  forCellReuseIdentifier:topicCellIdentifier];
+    [self.tableViewResources registerClass: UITableViewCell.self forCellReuseIdentifier:topicCellIdentifier];
     
     [self loadCourseDetails];
 }
@@ -125,7 +132,7 @@ static NSString *topicCellIdentifier = @"TopicCell";
 - (IBAction)tapAddToFavorites:(id)sender {
     
     NSEntityDescription *entity =
-        [NSEntityDescription entityForName:@"Course" inManagedObjectContext:self.managedContext];
+    [NSEntityDescription entityForName:@"Course" inManagedObjectContext:self.managedContext];
     
     NSManagedObject *newCourse = [[NSManagedObject alloc] initWithEntity: entity insertIntoManagedObjectContext: self.managedContext];
     
@@ -166,7 +173,7 @@ static NSString *topicCellIdentifier = @"TopicCell";
     self.btnAddToFavorites.hidden = NO;
     
     [[[[iToast makeText: [NSString stringWithFormat :@"%@ removed from favorites", self.courseTitle]]
-      setGravity:iToastGravityBottom] setDuration:iToastDurationShort] show];
+       setGravity:iToastGravityBottom] setDuration:iToastDurationShort] show];
 }
 
 #pragma tableView DataSource
@@ -181,6 +188,14 @@ static NSString *topicCellIdentifier = @"TopicCell";
     cell.textLabel.text = [[self.courseDetails.topics objectAtIndex: indexPath.row] objectForKey:@"title"];
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canFocusRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
 }
 
 @end
