@@ -24,7 +24,7 @@ Each student who wants to defend their project in front of a trainer and pass th
 
 ##  Examination procedure
 
-Students have **20 minutes** to present their application to a trainer. The deadline for the development of the application is 12:00 AM, 8 February 2016. Any commit after that time will be excluded from the defense version of the application.
+Students have **20 minutes** to present their application to a trainer. The deadline for the development of the application is 17:00 AM, 8 February 2016. Any commit after that time will be excluded from the defense version of the application.
 
 The examination for each student will be done as follows:
 
