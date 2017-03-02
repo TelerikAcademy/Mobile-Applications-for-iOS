@@ -2,91 +2,65 @@
 
 ##  Course description
 
-The **"Mobile applications for iOS"** course introduce the fundamental and advanced principles and know-how for creating applications for iPhone and iPad. The course will cover both Objective-C and Swift programming languages in detail, with a bit of C. Some of the topics in the course are: *Graphics and Animations*, *Storyboards and transitions*, *CoreData and SQLite*, *Touch and Gestures* and more
+The **"Mobile applications for iOS"** course introduce the fundamental and advanced principles and know-how for creating applications for iPhone and iPad. The course will cover both Objective-C and Swift programming languages in detail, with a bit of C. Some of the topics in the course are: *Graphics and Animations*, *Storyboards and transitions*, *CoreData and SQLite*, *Touch and Gestures*, building a sustainable and reusable architecture, dependecy injection and more
 
-##   Topics schedule
+##   Topics
 
-### 20 Jan 2016 (Wednesday)
+### Introduction
 
-| Topic                    | Description                                                 | Starts at | Duration |  
-| ------------------------ | ----------------------------------------------------------- | --------- | -------- |
-| Course introduction      | Introduction to the course, trainers, examination, projects | 11:00     |     |
-| Introduction to Swift    |  History, Ida, Platforms, etc...                            |     |       |
-| Swift fundamentals       | Data types, conditionals, loops, functions                  |     |       |
-| Data structures in Swift | Arrays, lists, dictionaries, sets                           |     |       |
-| Platform Setup           | Installing MAC OS X, xCode, etc...                          |     |       |
+1.  Course introduction
 
-### 21 Jan 2016 (Thusday)
+### Swift and Objective-C Core
 
-| Topic                        | Description                                                                                 | Starts at | Duration |  
-| ---------------------------- | ------------------------------------------------------------------------------------------- | --------- | -------- |
-| Classes and Objects in Swift | Creating classes, properties, methods, fields, hidden and visible, class and object methods | 11:00     |        |
-| Inheritance in Swift         | Categories, extensions, inheriting classes                                                  |      |        |
-| Platform Setup continuation  | Installing MAC OS X, xCode, etc...                                                          |     |        |
+1.  Swift and Objective-C fundamentals
+1.  Classess, categories, protocols, structures
+1.  Inheritance
+1.  Memory Management
+1.  Asynchronous operations in iOS
+1.  Workshop
 
-### 22 Jan 2016 (Friday)
+### iOS Basics
 
-| Topic                           | Description                                    | Starts at | Duration |  
-| ------------------------------- | ---------------------------------------------- | --------- | -------- |
-| Introduction to iOS Development | The platform, tools, etc...                    | 11:00     |          |
-| 101 iOS Application             | `ViewController`, `View`, Storyboards overview |
-| Storyboards and segues          | Interactions between views with Storyboards    |
-| **Workshop** Storyboards        | Creating a simple UI with transitions          |
+1.  Introduction to iOS Development
+1.  101 iOS Application
+1.  Storyboards and segues
+1.  Workshop
 
-### 25 Jan 2016 (Monday)
+### UI
 
-| Topic                                                        | Description                                                             | Starts at | Duration |  
-| ------------------------------------------------------------ | ----------------------------------------------------------------------- | --------- | -------- |
-| Views and controls                                           | Built-in views in iOS, custom views, showing data in a view             |
-| Navigation controller and navigation between ViewControllers | Using segues and with code
-| Memory Management                                            | Types of memory management, garbage collection, reference counting, ARC |
-| Lifecycle of a iOS application                               |  Opening/closing the application, loading and unloading of a view, etc.. |
-| **Workshop**: Creating application with navigation           | .... |
+1.  Views and controls
+1.  Navigation controller and navigation between ViewControllers
+1.  Tabs, drawers, etc...
+1.  Notifications
+1.  Gestures and Touch
+1.  Workshop
 
-### 26 Jan 2016 (Tuesday)
+### Data
 
-| Topic                                              | Description                                                | Starts at | Duration |  
-| -------------------------------------------------- | ---------------------------------------------------------- | --------- | -------- |
-| Creating HTTP requests in iOS application          | Creating HTTP GET and HTTP POST requests with JSON and XML |
-| Using [Parse](http://parse.com) in iOS application | Using a ready-to-use back-end, providing RESTful API       |
-| **Workshop**: Using HTTP requests                  | .... |
+1.  Creating HTTP requests in iOS application
+1.  Using [Parse](http://parse.com) in iOS application
+1.  SQLite in iOS application
+1.  CoreData in iOS application
+1.  Workshop
 
-### 27 Jan 2016 (Wednesday)
+### Architectural
 
-| Topic                       | Description                     | Starts at | Duration |  
-| --------------------------- | ------------------------------- | --------- | -------- |
-| SQLite in iOS application   | Using SQLite in iOS Application |           |          |
-| CoreData in iOS application | CoreData overview, ...          |           |          |
+1.  Application Lifecycle
+1.  Model-View-Controller in iOS
+1.  Dependecy injection
+1.  Unit testing
+1.  Workshop
 
-### 28 Jan 2016 (Thursday)
+### Graphics & Animations
 
-| Topic                            | Description                                    | Starts at | Duration |  
-| ----------------------------- | ---------------------------------------------- | --------- | -------- |
-| **Workshop** CoreData and SQLite |
+1.  CoreGraphics
+1.  Animations in iOS application
+1.  Workshop
 
-### 29 Jan 2016 (Friday)
+### Device APIs
 
-| Topic                              | Description | Starts at | Duration |  
-| ---------------------------------- | ----------- | --------- | -------- |
-| Project consultation and workshops |             | 14:00     | 4h       |
-
-### 01 Feb 2016 (Monday)
-
-| CoreGraphics                  | Creating graphics with CoreGraphics            |           |          |
-| Animations in iOS application | Built-in animations, custom animations, etc... |           |          |
-| **Workshop** Animations       |
-
-### 02 Feb 2016 (Tuesday)
-
-| Topic                           | Description                                                | Starts at | Duration |  
-| ------------------------------- | ---------------------------------------------------------- | --------- | -------- |
-| Using device APIs: Address book | Using the API for accessing the address book of the device |           |          |
-| Using device APIs: Geolocation  | Detect the current location of the device                  |           |          |
-| Using device APIs: The camera   | Creating pictures                                          |           |          |
-
-### 03 Feb 2016 (Wednesday)
-
-| Topic                          | Description                        | Starts at | Duration |  
-| ------------------------------ | ---------------------------------- | --------- | -------- |
-| Asynchronous operations in iOS | |
-| Gestures and Touch             | Built-in gestures, custom gestures |
+1.  Camera
+1.  Geolocation
+1.  Phonebook
+1.  Accelerometer
+1.  Workshop
