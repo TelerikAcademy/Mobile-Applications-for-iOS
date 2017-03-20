@@ -20,15 +20,19 @@ Design and implement a native mobile application for **iOS**. The application sh
 
 ### Use custom Views
 
+- Either extracted into `nib` files or drawing
+
 - **Up to 7 points**
 
 ### Use animations
+
+- Loading, showing, hiding
 
 - **Up to 6 points**
 
 ### Device APIs
 
-- Use four of the following device APIs:
+- Use two of the following device APIs:
   - Accelerometer
   - Camera
   - Compass
@@ -38,11 +42,15 @@ Design and implement a native mobile application for **iOS**. The application sh
   - Contacts
   - Media
 
-- **Up to 10 points**
+- **Up to 4 points**
 
 ### Application Storage (SQLite)
 
-- **Up to 5 points**
+- Use SQLite to store application local data
+  - Both CoreData or native SQL is ok
+  - Both native SQLite queries or ORMs are ok
+
+- **Up to 8 points**
 
 ### Remote data
 
@@ -51,19 +59,23 @@ Design and implement a native mobile application for **iOS**. The application sh
     - Telerik backend services
     - Parse.com
     - WebAPI RESTful API
-    - JAX-RS RESTful API
+    - SpringMVC RESTful API
     - Node.js RESTful API
-- **Up to 5 points**
+- **Up to 10 points**
 
 ### Background tasks
 
-- **Up to 6 points**
+- Some functinality should be done in the background
+
+- **Up to 5 points**
 
 ### Touch friendly UI
 
 - Touch friendly UI. Fulfill the criteria:
   - Usable UI
   - Fluent user experience
+
+- **Up to 5 points**
 
 ### Notifications
 
@@ -72,18 +84,25 @@ Design and implement a native mobile application for **iOS**. The application sh
   - Error message on error
   - Success on success
   - Show messages when the state of the app changes
-- **Up to 9 points**
+- **Up to 4 points**
 
 ### Gestures
 
-- Use at least **four** of the following gestures:
+- Use at least **two** of the following gestures:
   - Swipe
   - Fling
   - Pinch close or pinch open
   - Long press
   - Touch or double touch
   - Double touch drag
-- **Up to 9 points**
+- **Up to 4 points**
+
+##  App architecture
+
+- Use MVC
+- Separate your core into coherent and single-reponsibility classes
+
+- **Up to 13 points**
 
 ### High-quality code and reusability
 - The application code must be separated into consistent and cohesive modules
@@ -93,7 +112,7 @@ Design and implement a native mobile application for **iOS**. The application sh
 ### Validation and Error handling
 - Validation of user input
 - Handling access denials, network issues, etc. and keeping app alive
-- **Up to 4 points**
+- **Up to 3 points**
 
 **The maximum score for the teamwork assignment is 100 points**
 
