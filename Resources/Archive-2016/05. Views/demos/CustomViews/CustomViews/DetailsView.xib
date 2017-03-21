@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailsUIView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKt-0s-fPl">
+                    <rect key="frame" x="50" y="104" width="95" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="1Ig-2m-v6D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPh-IM-3JF">
+                    <rect key="frame" x="183" y="125" width="346" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3R-g9-H35">
+                    <rect key="frame" x="50" y="145" width="95" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="89" id="rm0-ON-y1Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0OA-wN-reS">
+                    <rect key="frame" x="183" y="175" width="346" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sV-hI-xSS">
+                    <rect key="frame" x="50" y="233" width="479" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="wVI-Kr-3hi"/>
+                    </constraints>
+                    <state key="normal" title="Save">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0i-fb-pNy">
+                    <rect key="frame" x="24" y="33" width="356" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="356" id="ink-Ln-Qut"/>
+                        <constraint firstAttribute="height" constant="26" id="xxU-Pg-den"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rPh-IM-3JF" firstAttribute="trailing" secondItem="0OA-wN-reS" secondAttribute="trailing" id="2me-VA-QaE"/>
+                <constraint firstItem="K3R-g9-H35" firstAttribute="trailing" secondItem="PKt-0s-fPl" secondAttribute="trailing" id="A3h-Ur-ppo"/>
+                <constraint firstItem="0OA-wN-reS" firstAttribute="trailing" secondItem="5sV-hI-xSS" secondAttribute="trailing" id="Eol-BS-eU1"/>
+                <constraint firstItem="PKt-0s-fPl" firstAttribute="top" secondItem="X0i-fb-pNy" secondAttribute="bottom" constant="45" id="Low-IN-15T"/>
+                <constraint firstItem="K3R-g9-H35" firstAttribute="leading" secondItem="5sV-hI-xSS" secondAttribute="leading" id="NKG-Uh-iHY"/>
+                <constraint firstItem="0OA-wN-reS" firstAttribute="top" secondItem="rPh-IM-3JF" secondAttribute="bottom" constant="20" id="WCe-I3-tnO"/>
+                <constraint firstItem="X0i-fb-pNy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="33" id="X3b-Fl-6l8"/>
+                <constraint firstItem="0OA-wN-reS" firstAttribute="leading" secondItem="rPh-IM-3JF" secondAttribute="leading" id="X7y-je-B6M"/>
+                <constraint firstItem="K3R-g9-H35" firstAttribute="leading" secondItem="PKt-0s-fPl" secondAttribute="leading" id="ZxR-1y-8WF"/>
+                <constraint firstItem="X0i-fb-pNy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="bJ6-dI-qYM"/>
+                <constraint firstItem="5sV-hI-xSS" firstAttribute="top" secondItem="0OA-wN-reS" secondAttribute="bottom" constant="28" id="cP0-eo-ksG"/>
+                <constraint firstAttribute="trailing" secondItem="rPh-IM-3JF" secondAttribute="trailing" constant="71" id="dmS-ik-sCb"/>
+                <constraint firstItem="rPh-IM-3JF" firstAttribute="leading" secondItem="PKt-0s-fPl" secondAttribute="trailing" constant="38" id="kVe-Ft-548"/>
+                <constraint firstItem="5sV-hI-xSS" firstAttribute="top" secondItem="PKt-0s-fPl" secondAttribute="bottom" constant="58" id="osA-Gk-LUA"/>
+                <constraint firstItem="rPh-IM-3JF" firstAttribute="top" secondItem="X0i-fb-pNy" secondAttribute="bottom" constant="66" id="rjC-dN-nz3"/>
+                <constraint firstItem="PKt-0s-fPl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="uXC-jp-KXq"/>
+                <constraint firstItem="K3R-g9-H35" firstAttribute="top" secondItem="X0i-fb-pNy" secondAttribute="bottom" constant="86" id="ukx-86-mSx"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonSave" destination="5sV-hI-xSS" id="9My-fB-fli"/>
+                <outlet property="labelMessage" destination="X0i-fb-pNy" id="qmO-XP-aFh"/>
+                <outlet property="textFieldDescription" destination="0OA-wN-reS" id="IpQ-I9-QSl"/>
+                <outlet property="textFieldName" destination="rPh-IM-3JF" id="T3h-sK-Kss"/>
+            </connections>
+        </view>
+    </objects>
+</document>

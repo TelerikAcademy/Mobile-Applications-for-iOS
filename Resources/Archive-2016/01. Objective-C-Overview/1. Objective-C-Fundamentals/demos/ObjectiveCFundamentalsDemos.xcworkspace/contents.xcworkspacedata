@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Numbers/01. Numbers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Strings/02. Strings.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StringConcatenation/03. StringConcatenation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FasterStringConcatenation/04. FasterStringConcatenation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ConditionalStatements/05. ConditionalStatements .xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwitchCase/06. SwitchCase.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoopsFor/07. LoopsFor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoopsForin/08. LoopsForin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoopsWhile/09. LoopsWhile.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoopsDoWhile/10. LoopsDoWhile.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LoopsNested/11. LoopsNested.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Arrays/12. Arrays.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Functions/13. Functions.xcodeproj">
+   </FileRef>
+</Workspace>
