@@ -1,0 +1,16 @@
+PODS:
+  - Swinject (2.0.0)
+  - SwinjectStoryboard (1.0.0):
+    - Swinject (= 2.0.0)
+
+DEPENDENCIES:
+  - Swinject (~> 2.0.0)
+  - SwinjectStoryboard (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+  SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
+
+PODFILE CHECKSUM: a064db7679e77170db0b870992149fcddef287d3
+
+COCOAPODS: 1.2.0
