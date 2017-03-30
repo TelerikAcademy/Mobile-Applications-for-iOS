@@ -1,0 +1,21 @@
+PODS:
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
+  - Swinject (2.0.0)
+  - SwinjectStoryboard (1.0.0):
+    - Swinject (= 2.0.0)
+
+DEPENDENCIES:
+  - SQLite.swift
+  - Swinject (~> 2.0.0)
+  - SwinjectStoryboard (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+  SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
+
+PODFILE CHECKSUM: d26d0f3d997ad5d6c271bc507334d33d20a75c46
+
+COCOAPODS: 1.2.0
